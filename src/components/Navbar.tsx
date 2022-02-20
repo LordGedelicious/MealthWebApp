@@ -17,7 +17,7 @@ const Navbar = () => {
       </div>
 
       {/* Links */}
-      <div className="flex flex-row justify-between w-[30em] pr-[3em] md:visible sm:invisible">
+      <div className="flex flex-row justify-between w-[30em] pr-[3em] md:visible invisible">
         <p className="w-[3.5em] hover:font-bold cursor-pointer hover:transition ease-in-out delay-150">Utama</p>
         <p className="w-[3em] hover:font-bold cursor-pointer hover:transition ease-in-out delay-150">Acara</p>
         <p className="w-[5.2em] hover:font-bold cursor-pointer hover:transition ease-in-out delay-150">Konseling</p>
