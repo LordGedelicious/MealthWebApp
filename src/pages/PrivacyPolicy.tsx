@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Wave from "../images/wave-privacypolicy1.svg";
+import Wave from "../images/vstock svg-wave-privacypolicy1.svg";
 import Star from "../images/vstock svg-07.svg";
 import { useRef } from "react";
 
@@ -20,7 +20,7 @@ const PrivacyPolicy = () => {
         <img src={Star} alt="" className="w-[23rem] absolute -right-[10rem] top-[28rem]"/>
 
         <h1 className="text-white text-[5rem] leading-[5.6rem] font-medium align-middle px-[60vh] mx-[10vh] pb-[6vh]">Privacy and Policy Mealth</h1>
-        <p className="text-white text-lg tracking-wide font-[400] leading-[1.375rem] pb-[6vh] px-[28vh]">
+        <p className="text-white pb-[6vh] px-[28vh]">
             Di Webapp Mealth, salah satu prioritas utama kami adalah privasi pengunjung kami. 
             Dokumen Kebijakan Privasi ini berisi jenis informasi yang dikumpulkan dan dicatat 
             oleh Mealth dan bagaimana kami menggunakannya.
@@ -39,7 +39,7 @@ const PrivacyPolicy = () => {
         <div ref={privacyPolicySection} className="px-[13vh]">
             <div className="pb-[3rem]">
                 <h1 className="text-red font-medium text-[3rem] pb-[1.5rem]">Informasi Personal</h1>
-                <p className="text-black text-lg tracking-wide leading-[1.375rem] font-[400]">
+                <p className="text-black">
                     Mealth mengikuti prosedur standar menggunakan file log. File-file ini mencatat pengunjung ketika mereka mengunjungi situs web. 
                     Semua perusahaan hosting melakukan ini dan merupakan bagian dari analisis layanan hosting. Informasi yang dikumpulkan oleh file log 
                     termasuk alamat protokol internet (IP), jenis browser, Penyedia Layanan Internet (ISP), tanggal dan waktu, halaman rujukan/keluar, dan 
@@ -49,7 +49,7 @@ const PrivacyPolicy = () => {
             </div>
             <div className="pb-[3rem]">
                 <h1 className="text-red font-medium text-[3rem] pb-[1.5rem]">Cookies</h1>
-                <p className="text-black text-lg tracking-wide leading-[1.375rem] font-[400]">
+                <p className="text-black">
                     Seperti situs web lainnya, Mealth menggunakan 'cookie'. Cookie digunakan untuk menyimpan informasi seperti preferensi pengunjung 
                     dan halaman yang diakses atau dikunjungi pengunjung pada situs web ini. Informasi tersebut kami gunakan untuk mengoptimalkan 
                     pengalaman pengguna dengan menyesuaikan konten halaman web kami.
@@ -57,7 +57,7 @@ const PrivacyPolicy = () => {
             </div>
             <div className="pb-[3rem]">
                 <h1 className="text-red font-medium text-[3rem] pb-[1.5rem]">Hak Privasi Pihak Ketiga</h1>
-                <p className="text-black text-lg tracking-wide leading-[1.375rem] font-[400]">
+                <p className="text-black">
                     Kebijakan Privasi Mealth tidak berlaku untuk pengiklan atau situs web lain. Karena itu, kami menyarankan Anda untuk membaca 
                     seksama masing-masing Kebijakan Privasi dari pihak ketiga untuk informasi yang lebih rinci. Anda berhak untuk menonaktifkan cookies 
                     pada browser Anda.
@@ -65,7 +65,7 @@ const PrivacyPolicy = () => {
             </div>
             <div className="pb-[3rem]">
                 <h1 className="text-red font-medium text-[3rem] pb-[1.5rem]">Persetujuan</h1>
-                <p className="text-black text-lg tracking-wide leading-[1.375rem] font-[400]">
+                <p className="text-black">
                     Dengan menggunakan situs web kami, Anda dengan ini menyetujui Kebijakan Privasi kami dan menyetujui syarat dan ketentuannya.
                 </p>
             </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import HomePage from '../pages/HomePage';
 import PrivacyPolicy from '../pages/PrivacyPolicy';
+import TermsAndCondition from '../pages/TermsAndCondition';
 import NotFound from '../pages/NotFound';
         
 export type route = {
@@ -22,7 +23,9 @@ export const toRoute = (label:string, path:string, component?:(props?: any) => J
 
 export const HOME_PAGE = toRoute('Home', '/', HomePage);
 
-export const PRIVACYPOLICY_PAGE = toRoute('Privacy Policy', '/PrivacyPolicy', PrivacyPolicy)
+export const PRIVACYPOLICY_PAGE = toRoute('Privacy Policy', '/PrivacyPolicy', PrivacyPolicy);
+
+export const TERMSANDCONDITION_PAGE = toRoute('Terms and Condition', '/TermsAndCondition', TermsAndCondition);
 
 export const NOTFOUND_PAGE = toRoute('Not Found', '/:rest*', NotFound);
 
@@ -47,5 +50,6 @@ export const NOTFOUND_PAGE = toRoute('Not Found', '/:rest*', NotFound);
 export const AllRoutes = [
   HOME_PAGE,
   PRIVACYPOLICY_PAGE,
+  TERMSANDCONDITION_PAGE,
   NOTFOUND_PAGE,
 ];
