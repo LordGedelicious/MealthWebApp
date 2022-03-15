@@ -1,30 +1,59 @@
-import Logo from "../images/logo.png";
+import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faInstagram, faLinkedin, faTiktok } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
+  const [isOpen, setIsOpen] = useState(false);
+ 
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+  }
+
   return (
-    <div className="bg-sorange h-[8em] w-[100%] flex flex-row justify-between items-center text-[#FFFFFF]">
-      {/* Logo and Tagline */}
-      <div className="flex flex-col items-start content-start pl-[2em]">
-        <img src={Logo} alt="Logo" className="h-[5em]" />
-        <p>“it&apos;s everyone&apos;s right to be</p>
-        <p>healthy mentally and physically”</p>
-      </div>
 
-      {/* Links */}
-      <div className="flex flex-row justify-between w-[30em] pr-[3em] md:visible invisible">
-        <p className="w-[3.5em] hover:font-bold cursor-pointer hover:transition ease-in-out delay-150">Utama</p>
-        <p className="w-[3em] hover:font-bold cursor-pointer hover:transition ease-in-out delay-150">Acara</p>
-        <p className="w-[5.2em] hover:font-bold cursor-pointer hover:transition ease-in-out delay-150">Konseling</p>
-        <p className="w-[4.2em] hover:font-bold cursor-pointer hover:transition ease-in-out delay-150">Chatbot</p>
-      </div>
-
-      {/* Social Media */}
-      <div className="flex flex-col items-end content-end pr-[2em]">
-        <div className="flex flex-row mb-[1em]">
-          <div className="bg-red h-10 w-10 rounded-full hover:bg-white mr-3"></div>
-          <div className="bg-red h-10 w-10 rounded-full hover:bg-white"></div>
+    <div className="bg-sorange text-white text-left flex flex-col lg:flex-row gap-y-[2rem] px-[4.375rem] py-[2.625rem]">
+      {/* LOGO, TAGLINE, SOCIAL MEDIA */}
+      <div className="lg:flex-basis-1/6">
+        <p className="font-[700] text-[1.5rem] pb-[0.5rem]">m e a l t h</p>
+        <p className="font-[500] pb-[1rem]">“it's everyone's right to be healthy mentally and physically”</p>
+        <div className="flex flex-row pb-[1.3rem] gap-[2.5rem]">
+          <div><a href="http://www.instagram.com/mealth_id"><FontAwesomeIcon icon={faInstagram} className="bg-red w-[28px] p-[10px] text-[28px] rounded-full hover:opacity-70"/></a></div>
+          <div><a href="http://www.linkedin.com/in/mealth-community"><FontAwesomeIcon icon={faLinkedin} className="bg-red w-[28px] p-[10px] text-[28px] rounded-full hover:opacity-70"/></a></div>
+          <div><a href="https://www.tiktok.com/@mealthid"><FontAwesomeIcon icon={faTiktok} className="bg-red w-[28px] p-[10px] text-[28px] rounded-full hover:opacity-70"/></a></div>
+          <div><a href="mailto:mealthcommunity@gmail.com"><FontAwesomeIcon icon={faEnvelope} className="bg-red w-[28px] p-[10px] text-[28px] rounded-full hover:opacity-70"/></a></div>
         </div>
-        <p>© 2022</p>
+        <p className="font-[500]">© 2022</p>
+      </div>
+
+      {/* OUR FEATURES */}
+      <div className="divide-y-2 lg:ml-[9rem] lg:basis-3/6">
+        <p className="font-[700] text-[1.5rem] pb-[0.5rem]">OUR FEATURES</p>
+        <div className="text-[1.125rem] font-[700] pt-[1.3rem]">
+          <div className="grid lg:grid-cols-2">
+            <div className="grid lg:grid-rows-2">
+              {/* HARUS DITAMBAH OnClick={panggil fungsi popup} */}
+              <a href="/" className="mb-[1.5rem] block hover:underline hover:transition ease-in-out delay-150">FOOD SCANNER</a> 
+              <a href="/" className="mb-[1.5rem] block hover:underline hover:transition ease-in-out delay-150">COUNSELING</a>
+            </div>
+            <div className="grid lg:grid-rows-2">
+              {/* HARUS DITAMBAH OnClick={panggil fungsi popup} */}
+
+              <a href="/" className="mb-[1.5rem] block hover:underline hover:transition ease-in-out delay-150">CURRENT CONDITION</a>
+              <a href="/" className="mb-[1.5rem] block hover:underline hover:transition ease-in-out delay-150">LIBRARY</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* GET TO KNOW */}
+      <div className="divide-y-2 lg:ml-[7rem] lg:basis-2/6">
+        <p className="font-[700] text-[1.5rem] pb-[0.5rem]">GET TO KNOW</p>
+        <div className="text-[1.125rem] font-[700] pt-[1.3rem]">
+          <a href="/" className="mb-[1.5rem] block hover:underline hover:transition ease-in-out delay-150">ABOUT US</a> {/* INI HREFNYA BELUM DIISI */}
+          <a href="/TermsAndCondition" className="mb-[1.5rem] block hover:underline hover:transition ease-in-out delay-150">TERMS AND CONDITION</a>
+          <a href="/PrivacyPolicy" className="mb-[1.5rem] block hover:underline hover:transition ease-in-out delay-150">PRIVACY POLICY</a>
+        </div>
       </div>
     </div>
   );
