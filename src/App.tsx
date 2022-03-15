@@ -5,10 +5,12 @@ import { Route, Switch } from 'wouter';
 import { AllRoutes } from './routes/routes';
 //import { Loading } from './component/Loading/Loading';
 //import { ScrollToTop } from './component/ScrollToTop/ScrollToTop';
+import Navbar from './components/Navbar';
 
 function App(): JSX.Element {
   return (
     <div className='App'>
+      <Navbar />
       <div className="app-content">
         <Switch>
           { AllRoutes.map(({ label, path, component: Component}, props) => (
