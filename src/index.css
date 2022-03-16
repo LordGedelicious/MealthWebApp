@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Philosopher';
+  src: url('./font/Philosopher-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./font/Montserrat-VariableFont_wght.ttf');
+}
+
+body {
+  color: #303032;
+}
+
+h1 {
+  font-family: 'Philosopher';
+  font-size: xx-large;
+  font-weight: 1000;
+}
+
+h2 {
+  font-family: 'Philosopher';
+  font-size: x-large;
+}
+
+h3 {
+  font-family: 'Montserrat';
+  font-size: large;
+  font-weight: 500;
+}
+
+p {
+  font-family: 'Montserrat';
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-weight: 400;
+  letter-spacing: 0.025rem;
+}
+
+li {
+  padding-top: 0.5rem;
+  font-family: 'Montserrat';
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-weight: 400;
+  letter-spacing: 0.025rem;
+}
