@@ -6,6 +6,7 @@ import { AllRoutes } from './routes/routes';
 //import { Loading } from './component/Loading/Loading';
 //import { ScrollToTop } from './component/ScrollToTop/ScrollToTop';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App(): JSX.Element {
   return (
@@ -23,6 +24,7 @@ function App(): JSX.Element {
           ))}
         </Switch>
       </div>
+      <Footer />
     </div>
   );
 }

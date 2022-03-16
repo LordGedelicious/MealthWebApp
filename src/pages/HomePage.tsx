@@ -8,7 +8,6 @@ import MsgImg from "../images/MsgImg.svg";
 const HomePage = () => {
   return (
     <>
-      <Navbar />
       <div className="bg-white">
         <div className="h=[100vh] overflow-hidden">
           <div className="grid grid-cols-2 bg-white items-center h-[100vh]">
@@ -42,7 +41,6 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

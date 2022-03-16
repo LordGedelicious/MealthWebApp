@@ -11,7 +11,6 @@ const PrivacyPolicy = () => {
 
   return (
     <>
-      <Navbar />
       <div className="bg-red pt-[40vh] text-center pb-[9vh] relative overflow-hidden">
         <img src={Star} alt="" className="w-[23rem] absolute -left-[8.2rem] top-[8rem]"/>
         <img src={Star} alt="" className="w-[10rem] absolute left-[13rem] top-[18rem] rotate-[30deg]"/>
@@ -71,7 +70,6 @@ const PrivacyPolicy = () => {
             </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

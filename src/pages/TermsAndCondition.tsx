@@ -10,7 +10,6 @@ const TermsAndCondition = ({ data }) => {
 
   return (
     <>
-      <Navbar />
       <div className="bg-blue pt-[40vh] text-center pb-[9vh] relative overflow-hidden">
         <img src={Star} alt="" className="w-[27rem] absolute -left-[10rem] top-[22rem] rotate-[-30deg]"/>
         <img src={Star} alt="" className="w-[14rem] absolute left-[6rem] top-[18rem] rotate-[14deg]"/>
@@ -1216,7 +1215,6 @@ const TermsAndCondition = ({ data }) => {
             </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };
