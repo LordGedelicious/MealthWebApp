@@ -10,29 +10,29 @@ const TermsAndConditions = ({ data }) => {
 
   return (
     <>
-      <div className="bg-blue pt-[40vh] text-center pb-[9vh] relative overflow-hidden">
-        <img src={Star} alt="" className="w-[27rem] absolute -left-[10rem] top-[22rem] rotate-[-30deg]"/>
-        <img src={Star} alt="" className="w-[14rem] absolute left-[6rem] top-[18rem] rotate-[14deg]"/>
-        <img src={Star} alt="" className="w-[16rem] absolute left-[43%] top-[5rem]"/>
-        <img src={Star} alt="" className="w-[10rem] absolute right-[14rem] top-[23rem] rotate-[-20deg]"/>
-        <img src={Star} alt="" className="w-[27rem] absolute -right-[8rem] top-[7rem] rotate-[30deg]"/>
+      <div className="bg-blue lg:pt-[40vh] pt-[30vh] text-center pb-[9vh] relative overflow-hidden">
+        <img src={Star} alt="" className="w-[27rem] absolute -left-[10rem] top-[22rem] rotate-[-30deg] z-0"/>
+        <img src={Star} alt="" className="w-[14rem] absolute left-[6rem] top-[18rem] rotate-[14deg] z-0"/>
+        <img src={Star} alt="" className="w-[16rem] absolute left-[43%] top-[5rem] z-0"/>
+        <img src={Star} alt="" className="w-[10rem] absolute right-[14rem] top-[23rem] rotate-[-20deg] z-0"/>
+        <img src={Star} alt="" className="w-[27rem] absolute -right-[8rem] top-[7rem] rotate-[30deg] z-0"/>
 
-        <h1 className="text-white text-[5rem] leading-[5.6rem] font-medium align-middle px-[60vh] mx-[10vh] pb-[6vh]">Terms and Conditions</h1>
-        <p className="text-white pb-[6vh] px-[30vh]">
+        <h1 className="text-white text-[4rem] lg:text-[5rem] leading-[5.6rem] font-medium align-middle px-[10vh] lg:px-[70vh] pb-[6vh] relative z-10">Terms and Conditions</h1>
+        <p className="text-white pb-[6vh] lg:px-[28vh] px-[10vh] relative z-10">
             Dengan mengunduh, mengakses atau menggunakan Webapp Mealth (Selanjutnya disebut sebagai "<strong>Webapp</strong>"), 
             Anda setuju untuk terikat dengan Syarat dan Ketentuan Penggunaan Webapp Mealth ini (Selanjutnya disebut 
             sebagai "<strong>Syarat dan Ketentuan</strong>"). Syarat & Ketentuan ini mempengaruhi hak dan kewajiban hukum Anda. 
             Apabila Anda tidak setuju untuk terikat oleh semua Syarat & Ketentuan ini, anda dapat menghapus Webapp 
             dan/atau membatalkan akun anda dan/atau tidak menggunakan layanan yang terdapat dalam Webapp.
         </p>
-        <button className="bg-green text-black w-[28vh] h-[9.5vh] rounded-[40px] font-extrabold text-lg hover:scale-110 ease-in duration-300" onClick={gotoTermsAndConditionsSection}>
+        <button className="bg-green text-black w-[28vh] h-[9.5vh] rounded-[40px] font-[500] text-lg hover:drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] hover:font-[600] transition ease-in-out duration-300" onClick={gotoTermsAndConditionsSection}>
             LEARN MORE!
         </button>
       </div>
       <div className="bg-white pb-[5rem] text-center">
         <img src={Wave} alt="" className="w-full mb-[6vh]"/>
         
-        <div ref={termsAndConditionsSection} className="px-[15vh]">
+        <div ref={termsAndConditionsSection} className="px-[8vh] lg:px-[13vh]">
             {/* {renderList} */}
             <div className="pb-[3rem]">
                 <h1 className="text-red font-medium text-[3rem] pb-[1.5rem]">A. KETENTUAN UMUM</h1>
