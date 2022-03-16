@@ -1,7 +1,7 @@
 import React from 'react';
 import HomePage from '../pages/HomePage';
 import PrivacyPolicy from '../pages/PrivacyPolicy';
-import TermsAndCondition from '../pages/TermsAndCondition';
+import TermsAndConditions from '../pages/TermsAndConditions';
 import NotFound from '../pages/NotFound';
 import About from '../pages/AboutUs';
         
@@ -26,7 +26,7 @@ export const HOME_PAGE = toRoute('Home', '/', HomePage);
 
 export const PRIVACYPOLICY_PAGE = toRoute('Privacy Policy', '/PrivacyPolicy', PrivacyPolicy);
 
-export const TERMSANDCONDITION_PAGE = toRoute('Terms and Condition', '/TermsAndCondition', TermsAndCondition);
+export const TERMSANDCONDITIONS_PAGE = toRoute('Terms and Conditions', '/TermsAndConditions', TermsAndConditions);
 
 export const ABOUTUS_PAGE = toRoute('About Us', '/About', About);
 
@@ -53,7 +53,7 @@ export const NOTFOUND_PAGE = toRoute('Not Found', '/:rest*', NotFound);
 export const AllRoutes = [
   HOME_PAGE,
   PRIVACYPOLICY_PAGE,
-  TERMSANDCONDITION_PAGE,
+  TERMSANDCONDITIONS_PAGE,
   ABOUTUS_PAGE,
   NOTFOUND_PAGE,
 ];

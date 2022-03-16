@@ -4,9 +4,9 @@ import Wave from "../images/vstock svg-wave-termsandcondition1.svg";
 import Star from "../images/vstock svg-05.svg";
 import { useRef } from "react";
 
-const TermsAndCondition = ({ data }) => {
-  const termsAndConditionSection = useRef(null);
-  const gotoPrivacyPolicySection = () => termsAndConditionSection.current.scrollIntoView({ behavior: 'smooth' })
+const TermsAndConditions = ({ data }) => {
+  const termsAndConditionsSection = useRef(null);
+  const gotoTermsAndConditionsSection = () => termsAndConditionsSection.current.scrollIntoView({ behavior: 'smooth' })
 
   return (
     <>
@@ -25,14 +25,14 @@ const TermsAndCondition = ({ data }) => {
             Apabila Anda tidak setuju untuk terikat oleh semua Syarat & Ketentuan ini, anda dapat menghapus Webapp 
             dan/atau membatalkan akun anda dan/atau tidak menggunakan layanan yang terdapat dalam Webapp.
         </p>
-        <button className="bg-green text-black w-[28vh] h-[9.5vh] rounded-[40px] font-extrabold text-lg hover:scale-110 ease-in duration-300" onClick={gotoPrivacyPolicySection}>
+        <button className="bg-green text-black w-[28vh] h-[9.5vh] rounded-[40px] font-extrabold text-lg hover:scale-110 ease-in duration-300" onClick={gotoTermsAndConditionsSection}>
             LEARN MORE!
         </button>
       </div>
       <div className="bg-white pb-[5rem] text-center">
         <img src={Wave} alt="" className="w-full mb-[6vh]"/>
         
-        <div ref={termsAndConditionSection} className="px-[15vh]">
+        <div ref={termsAndConditionsSection} className="px-[15vh]">
             {/* {renderList} */}
             <div className="pb-[3rem]">
                 <h1 className="text-red font-medium text-[3rem] pb-[1.5rem]">A. KETENTUAN UMUM</h1>
@@ -1219,4 +1219,4 @@ const TermsAndCondition = ({ data }) => {
   );
 };
 
-export default TermsAndCondition;
+export default TermsAndConditions;
