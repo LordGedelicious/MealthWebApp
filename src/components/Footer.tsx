@@ -50,7 +50,7 @@ const Footer = () => {
       <div className="divide-y-2 lg:ml-[7rem] lg:basis-2/6">
         <p className="font-[700] text-[1.5rem] pb-[0.5rem]">GET TO KNOW</p>
         <div className="text-[1.125rem] font-[700] pt-[1.3rem]">
-          <a href="/" className="mb-[1.5rem] block hover:underline hover:transition ease-in-out delay-150">ABOUT US</a> {/* INI HREFNYA BELUM DIISI */}
+          <a href="/About" className="mb-[1.5rem] block hover:underline hover:transition ease-in-out delay-150">ABOUT US</a>
           <a href="/TermsAndCondition" className="mb-[1.5rem] block hover:underline hover:transition ease-in-out delay-150">TERMS AND CONDITION</a>
           <a href="/PrivacyPolicy" className="mb-[1.5rem] block hover:underline hover:transition ease-in-out delay-150">PRIVACY POLICY</a>
         </div>
