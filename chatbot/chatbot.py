@@ -2,6 +2,7 @@ import numpy as np
 from difflib import SequenceMatcher
 import pandas as pd
 import os
+import codecs
 
 def extractQuery(query):
     # Buat dua buah array of array
@@ -17,9 +18,9 @@ def extractQuery(query):
             linkedListQuery.append([query['id'][idx], query[queryTarget][idx], int(query[referTarget][idx])])
     return idAndQuery, linkedListQuery
 
-def whereIsNextChat(userQuery, linkedListQuery):
+def whereIsNextChat(userQuery, linkedListQuery, currentChatIdx):
     for i in linkedListQuery:
-        if i[1] == userQuery:
+        if i[1] == userQuery and i[0] == currentChatIdx:
             return True, i[2]
     # else
     return False, -999
@@ -27,7 +28,7 @@ def whereIsNextChat(userQuery, linkedListQuery):
 def returnChat(listQuery, id):
     for i in listQuery:
         if i[0] == id:
-            print(i[1])
+            print(codecs.decode(i[1], 'unicode_escape'))
 
 def currentChatIndex(userQueryId, idAndQuery):
     for i in idAndQuery:
@@ -54,18 +55,20 @@ def main():
             print("Ujicoba chatbot Melly, ketik \"exit\" untuk mengakhiri program")
             hasChatStarted = True
         if hasChatStarted:
-            print("Sekarang lagi di bubble dengan id {}".format(queryOrder[-1]))
             returnChat(idAndQuery, queryOrder[-1]) # Ini buat respon default, regardless ada kelanjutan bubble atau engga
             if isItAQuestion(queryOrder[-1], query):
                 returnChat(linkedListQuery, queryOrder[-1]) # Ini buat respon pertanyaan
             userQuery = input("Masukkan query: ")
-            isNextChat, nextQuery = whereIsNextChat(userQuery, linkedListQuery)
+            isNextChat, nextQuery = whereIsNextChat(userQuery, linkedListQuery, queryOrder[-1])
             if userQuery == "exit":
                 hasChatEnded = True
+            elif userQuery == "kembali":
+                if len(queryOrder) > 1:
+                    queryOrder.pop(-1)
             elif isNextChat:
                 queryOrder.append(nextQuery)
             else:
-                print("Maaf, saya tidak mengerti")
+                print("Maaf, saya tidak mengerti\n")
     print("Ujicoba selesai!")
 
 
