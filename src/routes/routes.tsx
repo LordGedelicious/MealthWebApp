@@ -4,6 +4,7 @@ import PrivacyPolicy from '../pages/PrivacyPolicy';
 import TermsAndConditions from '../pages/TermsAndConditions';
 import NotFound from '../pages/NotFound';
 import About from '../pages/AboutUs';
+import Konsultasi from '../pages/Konsultasi';
         
 export type route = {
   label: string
@@ -30,6 +31,8 @@ export const TERMSANDCONDITIONS_PAGE = toRoute('Terms and Conditions', '/TermsAn
 
 export const ABOUTUS_PAGE = toRoute('About Us', '/About', About);
 
+export const KONSULTASI_PAGE = toRoute('Konsultasi', '/Konsultasi', Konsultasi);
+
 export const NOTFOUND_PAGE = toRoute('Not Found', '/:rest*', NotFound);
 
 /*export const NavbarRoutes: navroutes[] = [
@@ -55,5 +58,6 @@ export const AllRoutes = [
   PRIVACYPOLICY_PAGE,
   TERMSANDCONDITIONS_PAGE,
   ABOUTUS_PAGE,
+  KONSULTASI_PAGE,
   NOTFOUND_PAGE,
 ];
