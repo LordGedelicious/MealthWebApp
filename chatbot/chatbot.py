@@ -10,7 +10,7 @@ def extractQuery(query):
     idAndQuery = []
     linkedListQuery = []
     for idx in query.index:
-        idAndQuery.append([query['id'][idx], query['text'][idx]])
+        idAndQuery.append([query['id'][idx], query['text'][idx], query['numChoice'][idx]])
         for i in range(0, query['numChoice'][idx]):
             queryTarget = "query" + str(i+1)
             referTarget = "refer" + str(i+1)
@@ -29,9 +29,17 @@ def returnChat(listQuery, id):
         if i[0] == id:
             print(i[1])
 
+def currentChatIndex(userQueryId, idAndQuery):
+    for i in idAndQuery:
+        if i[0] == userQueryId:
+            return idAndQuery.index(i)
+
 def isItAQuestion(id, query):
-    if query['numChoice'][id] == 0:
-        return False 
+    rowEntry = query.loc[query['id'] == id]
+    if rowEntry['numChoice'].iloc[0] == 0:
+        return False
+    else:
+        return True
 
 def main():
     pathDirectory = os.path.abspath(os.path.join(os.path.dirname( __file__ )))
@@ -40,13 +48,16 @@ def main():
     idAndQuery, linkedListQuery = extractQuery(query)
     hasChatStarted = False
     hasChatEnded = False
-    queryOrder = [0]
+    queryOrder = [-1]
     while not hasChatEnded:
         if not hasChatStarted:
             print("Ujicoba chatbot Melly, ketik \"exit\" untuk mengakhiri program")
             hasChatStarted = True
         if hasChatStarted:
+            print("Sekarang lagi di bubble dengan id {}".format(queryOrder[-1]))
             returnChat(idAndQuery, queryOrder[-1]) # Ini buat respon default, regardless ada kelanjutan bubble atau engga
+            if isItAQuestion(queryOrder[-1], query):
+                returnChat(linkedListQuery, queryOrder[-1]) # Ini buat respon pertanyaan
             userQuery = input("Masukkan query: ")
             isNextChat, nextQuery = whereIsNextChat(userQuery, linkedListQuery)
             if userQuery == "exit":
