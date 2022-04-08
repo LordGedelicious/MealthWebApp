@@ -25,10 +25,20 @@ def whereIsNextChat(userQuery, linkedListQuery, currentChatIdx):
     # else
     return False, -999
 
-def returnChat(listQuery, id):
-    for i in listQuery:
-        if i[0] == id:
-            print(codecs.decode(i[1], 'unicode_escape'))
+def returnChat(listQuery, id, areChoices):
+    if areChoices:
+        numbering = 1
+        for i in listQuery:
+            if i[0] == id:
+                numberStr = str(numbering) + ". "
+                text = codecs.decode(i[1], 'unicode_escape')
+                print(numberStr + text)
+                numbering += 1
+    else:
+        for i in listQuery:
+            if i[0] == id:
+                text = codecs.decode(i[1], 'unicode_escape')
+                print(text)
 
 def currentChatIndex(userQueryId, idAndQuery):
     for i in idAndQuery:
@@ -52,12 +62,12 @@ def main():
     queryOrder = [-1]
     while not hasChatEnded:
         if not hasChatStarted:
-            print("Ujicoba chatbot Melly, ketik \"exit\" untuk mengakhiri program")
+            print("\nUjicoba chatbot Melly, ketik \"exit\" untuk mengakhiri program atau \"kembali\" untuk kembali 1 langkah\n")
             hasChatStarted = True
         if hasChatStarted:
-            returnChat(idAndQuery, queryOrder[-1]) # Ini buat respon default, regardless ada kelanjutan bubble atau engga
+            returnChat(idAndQuery, queryOrder[-1], False) # Ini buat respon default, regardless ada kelanjutan bubble atau engga
             if isItAQuestion(queryOrder[-1], query):
-                returnChat(linkedListQuery, queryOrder[-1]) # Ini buat respon pertanyaan
+                returnChat(linkedListQuery, queryOrder[-1], True) # Ini buat respon pertanyaan
             userQuery = input("Masukkan query: ")
             isNextChat, nextQuery = whereIsNextChat(userQuery, linkedListQuery, queryOrder[-1])
             if userQuery == "exit":
@@ -65,6 +75,8 @@ def main():
             elif userQuery == "kembali":
                 if len(queryOrder) > 1:
                     queryOrder.pop(-1)
+            elif userQuery == "reset":
+                queryOrder = [-1]
             elif isNextChat:
                 queryOrder.append(nextQuery)
             else:
