@@ -117,7 +117,7 @@ const About = () => {
           </div>
           <div className="px-[8vw]">
             <h1 className="text-7xl pt-24 mb-12 text-white">Contact Us</h1>
-            <Button className="bg-red w-full text-white hover:bg-green hover:text-black">+62 813-9448-7780</Button>
+            <Button className="bg-red w-full text-white cursor-default">+62 813-9448-7780</Button>
           </div>
         </div>
       </div>
