@@ -1,39 +1,34 @@
-import Wave from "../images/vstock svg-wave-privacypolicy1.svg";
-import Star from "../images/vstock svg-07.svg";
+import Girl from "../images/11-11.svg";
+import Wave from "../images/vstock svg-wave-events.png";
+import Star from "../images/vstock svg-17.svg";
+import StarOrange from "../images/vstock svg-17-sorange.svg";
 import { useRef } from "react";
 
-const PrivacyPolicy = () => {
-  const privacyPolicySection = useRef(null);
+const Events = () => {
+  const eventsSection = useRef(null);
 
-  const gotoPrivacyPolicySection = () => privacyPolicySection.current.scrollIntoView({ behavior: 'smooth' })
+  const gotoEventsSection = () => eventsSection.current.scrollIntoView({ behavior: 'smooth' })
 
   return (
     <>
-      <div className="bg-red lg:pt-[40vh] pt-[30vh] text-center pb-[9vh] relative overflow-hidden">
-        <img src={Star} alt="" className="w-[23rem] absolute -left-[8.2rem] top-[8rem] z-0"/> 
-        <img src={Star} alt="" className="w-[10rem] absolute left-[13rem] top-[18rem] rotate-[30deg] z-0"/>
-        <img src={Star} alt="" className="w-[12.5rem] absolute left-[43%] top-[6.5rem] z-0"/>
-        <img src={Star} alt="" className="w-[11rem] absolute right-[6rem] top-[23.5rem] rotate-[-36deg] z-0"/>
-        <img src={Star} alt="" className="w-[23rem] absolute -right-[10rem] top-[28rem] z-0"/>
-
-        <h1 className="text-white text-[4rem] lg:text-[5rem] leading-[5.6rem] font-medium align-middle px-[10vh] lg:px-[70vh] pb-[6vh] relative z-10">Privacy and Policy Mealth</h1>
-        <p className="text-white pb-[6vh] lg:px-[28vh] px-[10vh] relative z-10">
-            Di Webapp Mealth, salah satu prioritas utama kami adalah privasi pengunjung kami. 
-            Dokumen Kebijakan Privasi ini berisi jenis informasi yang dikumpulkan dan dicatat 
-            oleh Mealth dan bagaimana kami menggunakannya.
-            <br />
-            <br />
-            Jika Anda memiliki pertanyaan tambahan atau memerlukan informasi lebih lanjut tentang 
-            Kebijakan Privasi kami, jangan ragu untuk menghubungi kami.
+      <div className="bg-spurple lg:pt-[20vh] pt-[30vh] text-center relative overflow-hidden">
+        <img src={Star} alt="" className="w-[43rem] absolute -left-[16.75rem] top-[5rem] z-0"/> 
+        <img src={StarOrange} alt="" className="absolute left-[13rem] top-[43rem] z-0"/>
+        <img src={StarOrange} alt="" className="absolute right-[12rem] top-[15rem] z-0"/>
+        <img src={Star} alt="" className="w-[43rem] absolute -right-[21rem] top-[22rem] z-0"/>
+        <img src={Girl} alt="" className="w-[295px] mx-auto mb-[1.75rem] relative z-10"/>
+        <h1 className="text-white text-[4rem] lg:text-[5rem] leading-[5.6rem] font-medium align-middle px-[10vh] lg:px-[70vh] pb-[6vh] relative z-10">Lorem Ipsum sit dolor amet</h1>
+        <p className="text-white pb-[6vh] lg:px-[45vh] px-[10vh] relative z-10">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rhoncus, nisl venenatis hendrerit sagittis, elit odio cursus orci.
         </p>
-        <button className="bg-green text-black w-[28vh] h-[9.5vh] rounded-[40px] font-[500] text-lg hover:drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] hover:font-[600] transition ease-in-out duration-300" onClick={gotoPrivacyPolicySection}>
-            LEARN MORE!
+        <button className="bg-green text-black w-[28vh] h-[9.5vh] rounded-[40px] font-[500] text-lg hover:drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] hover:font-[600] transition ease-in-out duration-300" onClick={gotoEventsSection}>
+            Lorem Ipsum
         </button>
+        <img src={Wave} alt="" className="w-full pt-[28vh]"/>
       </div>
       <div className="bg-white pb-[5rem] text-center">
-        <img src={Wave} alt="" className="w-full mb-[6vh]"/>
-        
-        <div ref={privacyPolicySection} className="px-[8vh] lg:px-[13vh]">
+        <div ref={eventsSection} className="px-[8vh] lg:px-[13vh] lg:pt-[12vh]">
+          <p>TODO</p>
             <div className="pb-[3rem]">
                 <h1 className="text-red font-medium text-[3rem] pb-[1.5rem]">Informasi Personal</h1>
                 <p className="text-black">
@@ -72,4 +67,4 @@ const PrivacyPolicy = () => {
   );
 };
 
-export default PrivacyPolicy;
+export default Events;
