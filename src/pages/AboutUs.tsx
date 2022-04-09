@@ -7,13 +7,15 @@ import FlowerBig from "../images/about/flower_big.svg";
 import HeartFull from "../images/about/heart_full.svg";
 import Eye from "../images/about/eye.svg";
 import Star from "../images/about/star.svg";
-import GreenBlob from "../images/about/green_blob.svg";
-import RedBlob from "../images/about/red_blob.svg";
-import Nathalie from "../images/about/team/NathalieMauraSoetopo.jpg";
-import Naufal from "../images/about/team/NaufalDhamiriSyifa.jpg";
-import Briana from "../images/about/team/BrianaAlifiaPutri.jpg";
-import Rivad from "../images/about/team/MuhammadRivadIchsandiB.jpg";
+import Nathalie from "../images/about/team/NathalieMauraSoetopo.png";
+import Naufal from "../images/about/team/NaufalDhamiriSyifa.png";
+import Briana from "../images/about/team/BrianaAlifiaPutri.png";
+import Rivad from "../images/about/team/MuhammadRivadIchsandiB.png";
 import TeamProfile from "../components/TeamProfile";
+import Gmail from "../images/about/social_media_icons/gmail.svg";
+import Instagram from "../images/about/social_media_icons/instagram.svg";
+import LinkedIn from "../images/about/social_media_icons/linkedin.svg";
+import TikTok from "../images/about/social_media_icons/tiktok.svg";
 import Button from "../components/Button";
 
 
@@ -39,7 +41,7 @@ const About = () => {
         Berdasarkan International Encyclopedia of the Social & Behavioral Sciences, Eating Behavior dapat diartikan sebagai "Eating behavior is another consequential health behavior that is addressed by behavioral medicine programs that target specific food consumption or overall weight gain or loss." Salah satu bentuk dari Eating Behavior adalah Eating Disorder. Faktanya terdapat 420.000 orang Indonesia yang mengalami Eating Disorder.</p>
 
         <h1 className="text-5xl mt-24 mb-12 text-speach">Mealth</h1>
-        <p>Mealth adalah sebuah ruang yang aman, nyaman, dan suportif dalam bentuk komunitas yang ingin meningkatkan kesadaran dan pengetahuan mengenai Eating Behavior secara spesifik pada Eating Disorder kepada masyarakat Indonesia melalui sosial media, events, dan program yang diberikan.</p>
+        <p>Mealth adalah sebuah ruang yang aman, nyaman, dan suportif dalam bentuk komunitas yang ingin meningkatkan kesadaran dan pengetahuan mengenai Eating Behavior secara spesifik pada Eating Disorder kepada masyarakat Indonesia melalui <i>social media, events, </i>dan program yang diberikan.</p>
 
         <h1 className="text-5xl mt-24 mb-12 text-speach">Core Values</h1>
         <div className="flex flex-col lg:flex-row w-full justify-around px-12 mb-24">
@@ -75,14 +77,43 @@ const About = () => {
           <img src={Heart} alt="Hati" className="w-full object-contain px-[8vw] self-end" />
           <div className="flex flex-col px-[8vw] justify-between">
             <h1 className="text-7xl pt-24 mb-6 text-white">Social Media</h1>
-            <Button className="bg-red text-white hover:bg-green hover:text-black my-1">mealth_id</Button>
-            <Button className="bg-red text-white hover:bg-green hover:text-black my-1">mealth-community</Button>
-            <Button className="bg-red text-white hover:bg-green hover:text-black my-1">@mealth_id</Button>
-            <Button className="bg-red text-white hover:bg-green hover:text-black my-1">mealthcommunity@gmail.com</Button>
+            <a href="https://www.instagram.com/mealth_id/" className="w-full">
+              <Button className="bg-red text-white hover:bg-spurple my-1 w-full">
+                <div className="grid grid-rows-1 grid-cols-[2rem,auto] w-full">
+                  <img src={Instagram} alt="Instagram:" className="w-6 h-6" />
+                  <p className="w-full text-center">mealth_id</p>
+                </div>
+              </Button>
+            </a>
+            <a href="https://www.linkedin.com/company/mealthcommunity/" className="w-full">
+              <Button className="bg-red text-white hover:bg-spurple my-1 w-full">
+                <div className="grid grid-rows-1 grid-cols-[2rem,auto] w-full">
+                  <img src={LinkedIn} alt="LinkedIn:" className="w-6 h-6" />
+                  <p className="w-full text-center">mealth-community</p>
+                </div>
+              </Button>
+            </a>
+            <a href="https://www.tiktok.com/@mealthid" className="w-full">
+              <Button className="bg-red text-white hover:bg-spurple my-1 w-full">
+                <div className="grid grid-rows-1 grid-cols-[2rem,auto] w-full">
+                  <img src={TikTok} alt="Tiktok:" className="w-6 h-6" />
+                  <p className="w-full text-center">@mealth_id</p>
+                </div>
+              </Button>
+            </a>
+            <a href="mailto:mealthcommunity@gmail.com" className="w-full">
+              <Button className="bg-red text-white hover:bg-spurple my-1 w-full">
+                <div className="grid grid-rows-1 grid-cols-[2rem,auto] w-full">
+                  <img src={Gmail} alt="Gmail:" className="w-6 h-6" />
+                  <p className="text-sm md:text-lg w-full text-center">mealthcommunity@gmail.com</p>
+                </div>
+              </Button>
+            </a>
           </div>
           <div className="px-[8vw]">
-            <h1 className="text-7xl pt-24 mb-12 text-white">Open Chat</h1>
-            <Button className="bg-green w-full hover:bg-orange hover:text-yellow">JOIN US!</Button>
+            <h1 className="text-7xl pt-24 mb-12 text-white">Community</h1>
+            <Button className="bg-green w-full hover:bg-orange hover:text-yellow my-1">JOIN US AT LINE</Button>
+            <Button className="bg-green w-full hover:bg-orange hover:text-yellow my-1">JOIN US AT WHATSAPP</Button>
           </div>
           <div className="px-[8vw]">
             <h1 className="text-7xl pt-24 mb-12 text-white">Contact Us</h1>
