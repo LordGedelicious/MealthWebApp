@@ -85,7 +85,7 @@ const About = () => {
                 </div>
               </Button>
             </a>
-            <a href="https://www.linkedin.com/company/mealthcommunity/" className="w-full">
+            <a href="https://www.linkedin.com/in/mealth-community" className="w-full">
               <Button className="bg-red text-white hover:bg-spurple my-1 w-full">
                 <div className="grid grid-rows-1 grid-cols-[2rem,auto] w-full">
                   <img src={LinkedIn} alt="LinkedIn:" className="w-6 h-6" />
@@ -112,8 +112,8 @@ const About = () => {
           </div>
           <div className="px-[8vw]">
             <h1 className="text-7xl pt-24 mb-12 text-white">Community</h1>
-            <Button className="bg-green w-full hover:bg-orange hover:text-yellow my-1">JOIN US AT LINE</Button>
-            <Button className="bg-green w-full hover:bg-orange hover:text-yellow my-1">JOIN US AT WHATSAPP</Button>
+            <a href="https://line.me/ti/g2/RtRB7pV9-TXcRsvuu2z-QqxGtQM4DtkCXa1r6w?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"><Button className="bg-green w-full hover:bg-orange hover:text-yellow my-1">JOIN US AT LINE</Button></a>
+            <a href="https://bit.ly/MealthGroupCommunity"><Button className="bg-green w-full hover:bg-orange hover:text-yellow my-1">JOIN US AT WHATSAPP</Button></a>
           </div>
           <div className="px-[8vw]">
             <h1 className="text-7xl pt-24 mb-12 text-white">Contact Us</h1>
