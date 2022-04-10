@@ -12,12 +12,12 @@ const Footer = () => {
 
   return (
 
-    <div className="bg-sorange text-white text-left flex flex-col lg:flex-row gap-y-[2rem] px-[4.375rem] py-[2.625rem]">
+    <div className="bg-sorange text-white text-left flex flex-col lg:flex-row gap-y-[2rem] px-[2rem] lg:px-[4.375rem] py-[2.625rem]">
       {/* LOGO, TAGLINE, SOCIAL MEDIA */}
       <div className="lg:flex-basis-1/6">
         <p className="font-[700] text-[1.5rem] pb-[0.5rem]">m e a l t h</p>
         <p className="font-[500] pb-[1rem]">“it's everyone's right to be healthy mentally and physically”</p>
-        <div className="flex flex-row pb-[1.3rem] gap-[1.5rem] lg:gap-[2.5rem]">
+        <div className="flex flex-row pb-[1.3rem] justify-between sm:justify-start sm:gap-[1.5rem] lg:gap-[2.5rem]">
           <div><a href="http://www.instagram.com/mealth_id"><FontAwesomeIcon icon={faInstagram} className="bg-red w-[28px] p-[10px] text-[28px] rounded-full hover:opacity-70"/></a></div>
           <div><a href="http://www.linkedin.com/in/mealth-community"><FontAwesomeIcon icon={faLinkedin} className="bg-red w-[28px] p-[10px] text-[28px] rounded-full hover:opacity-70"/></a></div>
           <div><a href="https://www.tiktok.com/@mealthid"><FontAwesomeIcon icon={faTiktok} className="bg-red w-[28px] p-[10px] text-[28px] rounded-full hover:opacity-70"/></a></div>
