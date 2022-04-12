@@ -62,7 +62,7 @@ def main():
     queryOrder = [-1]
     while not hasChatEnded:
         if not hasChatStarted:
-            print("\nUjicoba chatbot Melly, ketik \"exit\" untuk mengakhiri program atau \"kembali\" untuk kembali 1 langkah\n")
+            print("\nUjicoba chatbot Melly, ketik \"exit\" untuk mengakhiri program atau \"kembali\" untuk kembali 1 langkah atau \"reset\" untuk mengulang chat\n")
             hasChatStarted = True
         if hasChatStarted:
             returnChat(idAndQuery, queryOrder[-1], False) # Ini buat respon default, regardless ada kelanjutan bubble atau engga
