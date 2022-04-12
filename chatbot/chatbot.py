@@ -20,7 +20,10 @@ def extractQuery(query):
 
 def whereIsNextChat(userQuery, linkedListQuery, currentChatIdx):
     for i in linkedListQuery:
-        if i[1] == userQuery and i[0] == currentChatIdx:
+        targetQuery = i[1].lower().replace(" ","")
+        userQuery = userQuery.lower().replace(" ","")
+        similarityScore = SequenceMatcher(None, targetQuery, userQuery).ratio()
+        if similarityScore >= 0.7 and i[0] == currentChatIdx:
             return True, i[2]
     # else
     return False, -999
