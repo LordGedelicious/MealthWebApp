@@ -1,5 +1,3 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import Wave from "../images/vstock svg-wave-privacypolicy1.svg";
 import Star from "../images/vstock svg-07.svg";
 import { useRef } from "react";
@@ -19,7 +17,7 @@ const PrivacyPolicy = () => {
         <img src={Star} alt="" className="w-[23rem] absolute -right-[10rem] top-[28rem] z-0"/>
 
         <h1 className="text-white text-[4rem] lg:text-[5rem] leading-[5.6rem] font-medium align-middle px-[10vh] lg:px-[70vh] pb-[6vh] relative z-10">Privacy and Policy Mealth</h1>
-        <p className="text-white pb-[6vh] lg:px-[28vh] px-[10vh] relative z-10">
+        <p className="text-white pb-[6vh] lg:px-[28vh] px-[5vh] relative z-10">
             Di Webapp Mealth, salah satu prioritas utama kami adalah privasi pengunjung kami. 
             Dokumen Kebijakan Privasi ini berisi jenis informasi yang dikumpulkan dan dicatat 
             oleh Mealth dan bagaimana kami menggunakannya.
@@ -28,14 +26,14 @@ const PrivacyPolicy = () => {
             Jika Anda memiliki pertanyaan tambahan atau memerlukan informasi lebih lanjut tentang 
             Kebijakan Privasi kami, jangan ragu untuk menghubungi kami.
         </p>
-        <button className="bg-green text-black w-[28vh] h-[9.5vh] rounded-[40px] font-[500] text-lg hover:drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] hover:font-[600] transition ease-in-out duration-300" onClick={gotoPrivacyPolicySection}>
+        <button className="bg-green text-black w-[12.5rem] h-[4.25rem] rounded-[20.5rem] font-[500] text-lg hover:drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] hover:font-[600] transition ease-in-out duration-300" onClick={gotoPrivacyPolicySection}>
             LEARN MORE!
         </button>
       </div>
       <div className="bg-white pb-[5rem] text-center">
         <img src={Wave} alt="" className="w-full mb-[6vh]"/>
         
-        <div ref={privacyPolicySection} className="px-[8vh] lg:px-[13vh]">
+        <div ref={privacyPolicySection} className="px-[4vh] lg:px-[13vh]">
             <div className="pb-[3rem]">
                 <h1 className="text-red font-medium text-[3rem] pb-[1.5rem]">Informasi Personal</h1>
                 <p className="text-black">

@@ -18,10 +18,10 @@ const Navbar = () => {
                 <a href="/"><img className="h-[6rem]" src={Logo} alt="Logo" /></a>
               </div>
               {/* NAVBAR ITEMS */}
-              <div className="hidden md:block">
+              <div className="hidden lg:block">
                 <div className="flex items-baseline space-x-[4.5rem] text-[1.125rem] font-[400] text-black">
-                  <a href="/" className=" hover:font-[700] px-3 py-2">HOME</a>
-                  <a href="/" className=" hover:font-[700] px-3 py-2">EVENTS</a>
+                  <a href="/" className=" hover:font-[700] px-3 py-2 align-middle">HOME</a>
+                  <a href="/Events" className=" hover:font-[700] px-3 py-2 align-middle">EVENTS</a>
                   <div className="group  px-3 py-2 relative">
                     <p className="hover:font-[700] hover:cursor-pointer">OUR FEATURES &nbsp;&nbsp;<FontAwesomeIcon icon={faCaretDown} /></p>
                     <div className="absolute hidden pt-2 w-64 -left-1 group-hover:block bg-[#FFFFFF]">
@@ -43,7 +43,7 @@ const Navbar = () => {
               </div>
             </div>
             {/* BURGER BUTTON */}
-            <div className="mr-2 flex md:hidden">
+            <div className="mr-2 flex lg:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
@@ -69,9 +69,10 @@ const Navbar = () => {
           leaveTo="opacity-0 scale-95"
         >
           {(ref) => (
-            <div className="md:hidden" id="mobile-menu">
+            <div className="lg:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-[1.125rem] font-[400] text-black">
                 <a href="/" className="hover:font-[700] hover:bg-[#D2D2D2] block px-3 py-4 rounded-sm">HOME</a>
+                <a href="/Events" className="hover:font-[700] hover:bg-[#D2D2D2] block px-3 py-4 rounded-sm">EVENTS</a>
                 <div className="group px-3 py-4 rounded-sm relative">
                   <p className="hover:font-[700] hover:cursor-pointer">OUR FEATURES &nbsp;&nbsp;<FontAwesomeIcon icon={faCaretDown} /></p>
                   <div className="w-full hidden pt-4 group-hover:block bg-[#FFFFFF]">

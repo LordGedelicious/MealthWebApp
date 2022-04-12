@@ -5,7 +5,8 @@ import TermsAndConditions from '../pages/TermsAndConditions';
 import NotFound from '../pages/NotFound';
 import About from '../pages/AboutUs';
 import Konsultasi from '../pages/Konsultasi';
-        
+import Events from '../pages/EventsPage';        
+
 export type route = {
   label: string
   path: string
@@ -33,6 +34,8 @@ export const ABOUTUS_PAGE = toRoute('About Us', '/About', About);
 
 export const KONSULTASI_PAGE = toRoute('Konsultasi', '/Konsultasi', Konsultasi);
 
+export const EVENTS_PAGE = toRoute('Events', '/Events', Events);
+
 export const NOTFOUND_PAGE = toRoute('Not Found', '/:rest*', NotFound);
 
 /*export const NavbarRoutes: navroutes[] = [
@@ -59,5 +62,6 @@ export const AllRoutes = [
   TERMSANDCONDITIONS_PAGE,
   ABOUTUS_PAGE,
   KONSULTASI_PAGE,
+  EVENTS_PAGE,
   NOTFOUND_PAGE,
 ];
