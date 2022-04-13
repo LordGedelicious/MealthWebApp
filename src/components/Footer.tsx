@@ -34,7 +34,7 @@ const Footer = () => {
             <div className="grid lg:grid-rows-2">
               {/* HARUS DITAMBAH OnClick={panggil fungsi popup} */}
               <a href="/" className="mb-[1.5rem] block hover:underline hover:transition ease-in-out delay-150">FOOD SCANNER</a> 
-              <a href="/" className="mb-[1.5rem] block hover:underline hover:transition ease-in-out delay-150">COUNSELING</a>
+              <a href="/Konsultasi" className="mb-[1.5rem] block hover:underline hover:transition ease-in-out delay-150">COUNSELING</a>
             </div>
             <div className="grid lg:grid-rows-2">
               {/* HARUS DITAMBAH OnClick={panggil fungsi popup} */}
@@ -51,7 +51,7 @@ const Footer = () => {
         <p className="font-[700] text-[1.5rem] pb-[0.5rem]">GET TO KNOW</p>
         <div className="text-[1.125rem] font-[700] pt-[1.3rem]">
           <a href="/About" className="mb-[1.5rem] block hover:underline hover:transition ease-in-out delay-150">ABOUT US</a>
-          <a href="/TermsAndCondition" className="mb-[1.5rem] block hover:underline hover:transition ease-in-out delay-150">TERMS AND CONDITIONS</a>
+          <a href="/TermsAndConditions" className="mb-[1.5rem] block hover:underline hover:transition ease-in-out delay-150">TERMS AND CONDITIONS</a>
           <a href="/PrivacyPolicy" className="mb-[1.5rem] block hover:underline hover:transition ease-in-out delay-150">PRIVACY POLICY</a>
         </div>
       </div>

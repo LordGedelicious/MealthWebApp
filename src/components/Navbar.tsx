@@ -28,7 +28,7 @@ const Navbar = () => {
                       <a className="hover:bg-[#D2D2D2] hover:font-[700] py-2 px-4 block whitespace-no-wrap" href="/">FOOD SCANNER</a>
                       <a className="hover:bg-[#D2D2D2] hover:font-[700] py-2 px-4 block whitespace-no-wrap" href="/">CURRENT CONDITION</a>
                       <a className="hover:bg-[#D2D2D2] hover:font-[700] py-2 px-4 block whitespace-no-wrap" href="/">LIBRARY</a>
-                      <a className="hover:bg-[#D2D2D2] hover:font-[700] py-2 px-4 block whitespace-no-wrap" href="/">COUNSELING</a>
+                      <a className="hover:bg-[#D2D2D2] hover:font-[700] py-2 px-4 block whitespace-no-wrap" href="/Konsultasi">COUNSELING</a>
                     </div>
                   </div>
                   <div className="group  px-3 py-2 relative">
@@ -79,7 +79,7 @@ const Navbar = () => {
                     <a className="hover:bg-[#D2D2D2] hover:font-[700] py-2 px-4 block whitespace-no-wrap" href="/">FOOD SCANNER</a>
                     <a className="hover:bg-[#D2D2D2] hover:font-[700] py-2 px-4 block whitespace-no-wrap" href="/">CURRENT CONDITION</a>
                     <a className="hover:bg-[#D2D2D2] hover:font-[700] py-2 px-4 block whitespace-no-wrap" href="/">LIBRARY</a>
-                    <a className="hover:bg-[#D2D2D2] hover:font-[700] py-2 px-4 block whitespace-no-wrap" href="/">COUNSELING</a>
+                    <a className="hover:bg-[#D2D2D2] hover:font-[700] py-2 px-4 block whitespace-no-wrap" href="/Konsultasi">COUNSELING</a>
                   </div>
                 </div>
                 <div className="group px-3 py-4 rounded-sm relative">
