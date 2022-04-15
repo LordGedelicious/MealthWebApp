@@ -41,10 +41,12 @@ const Konsultasi = () => {
         </div>
         {/* RIGHT */}
         <div className="col-span-2 rounded-xl bg-white shadow-md flex justify-between p-6 my-3">
-          <img src={Chat} className="w-12 h-12 bg-red rounded-full object-contain p-3 mr-2" />
-          <div>
-            <h2>Chat Consultation</h2>
-            <p>Available only for psychologist and Nutritionist</p>
+          <div className="flex text-left">
+            <img src={Chat} className="w-12 h-12 bg-red rounded-full object-contain p-3 mr-3" />
+            <div>
+              <h2>Chat Consultation</h2>
+              <p>Available only for psychologist and Nutritionist</p>
+            </div>
           </div>
           <div className="flex flex-col items-center">
             <h3>{HargaChatConsultation}</h3>
@@ -55,10 +57,12 @@ const Konsultasi = () => {
         </div>
 
         <div className="col-span-2 rounded-xl bg-white shadow-md flex justify-between p-6 my-3">
-          <img src={Call} className="w-12 h-12 bg-red rounded-full object-contain p-3 mr-2" />
-          <div>
-            <h2>Call Consultation</h2>
-            <p>Available only for psychologist and Nutritionist</p>
+          <div className="flex text-left">
+            <img src={Call} className="w-12 h-12 bg-red rounded-full object-contain p-3 mr-3" />
+            <div>
+              <h2>Call Consultation</h2>
+              <p>Available only for psychologist and Nutritionist</p>
+            </div>
           </div>
           <div className="flex flex-col items-center">
             <h3>{HargaCallConsultation}</h3>
@@ -67,10 +71,12 @@ const Konsultasi = () => {
         </div>
 
         <div className="col-span-2 rounded-xl bg-white shadow-md flex justify-between p-6 my-3">
-          <img src={Vid} className="w-12 h-12 bg-red rounded-full object-contain p-3 mr-2" />
-          <div>
-            <h2>Video Conference Consultation</h2>
-            <p>Available only for psychologist, psychiatrist, and Nutritionist</p>
+          <div className="flex text-left">
+            <img src={Vid} className="w-12 h-12 bg-red rounded-full object-contain p-3 mr-3" />
+            <div>
+              <h2>Video Conference Consultation</h2>
+              <p>Available only for psychologist, psychiatrist, and Nutritionist</p>
+            </div>
           </div>
           <div className="flex flex-col items-center">
             <h3>{HargaVidConsultation}</h3>
@@ -90,8 +96,10 @@ const Konsultasi = () => {
           </div>
           <div className="bg-white rounded-xl p-6">
             <div className="flex justify-between">
-              <img src={Call} className="w-12 h-12 bg-red rounded-full object-contain p-3 mr-2" />
-              <h2>Call Service</h2>
+              <div className="flex">
+                <img src={Call} className="w-12 h-12 bg-red rounded-full object-contain p-3 mr-3" />
+                <h2>Call Service</h2>
+              </div>
               <div className="flex flex-col items-center">
                 <h3>{HargaNyamanCallConsultation}</h3>
                 <Button className="bg-green hover:bg-spurple hover:font-normal w-36">Book Now</Button>
@@ -99,8 +107,10 @@ const Konsultasi = () => {
             </div>
             <div className="w-full h-0.5 rounded-xl bg-black my-3" />
             <div className="flex justify-between">
-              <img src={Vid} className="w-12 h-12 bg-red rounded-full object-contain p-3 mr-2" />
-              <h2>Video Conference Service</h2>
+              <div className="flex">
+                <img src={Vid} className="w-12 h-12 bg-red rounded-full object-contain p-3 mr-3" />
+                <h2>Video Conference Service</h2>
+              </div>
               <div className="flex flex-col items-center">
                 <h3>{HargaNyamanVidConsultation}</h3>
                 <Button className="bg-green hover:bg-spurple hover:font-normal w-36">Book Now</Button>
@@ -122,8 +132,10 @@ const Konsultasi = () => {
           </div>
           <div className="bg-white rounded-xl p-6">
             <div className="flex justify-between">
-              <img src={Call} className="w-12 h-12 bg-red rounded-full object-contain p-3 mr-2" />
-              <h2>Call Service</h2>
+              <div className="flex">
+                <img src={Call} className="w-12 h-12 bg-red rounded-full object-contain p-3 mr-3" />
+                <h2>Call Service</h2>
+              </div>
               <div className="flex flex-col items-center">
                 <h3>{HargaBahagiaCallConsultation}</h3>
                 <Button className="bg-green hover:bg-spurple hover:font-normal w-36">Book Now</Button>
@@ -131,8 +143,10 @@ const Konsultasi = () => {
             </div>
             <div className="w-full h-0.5 rounded-xl bg-black my-3" />
             <div className="flex justify-between">
-              <img src={Vid} className="w-12 h-12 bg-red rounded-full object-contain p-3 mr-2" />
-              <h2>Video Conference Service</h2>
+              <div className="flex">
+                <img src={Vid} className="w-12 h-12 bg-red rounded-full object-contain p-3 mr-3" />
+                <h2>Video Conference Service</h2>
+              </div>
               <div className="flex flex-col items-center">
                 <h3>{HargaBahagiaVidConsultation}</h3>
                 <Button className="bg-green hover:bg-spurple hover:font-normal w-36">Book Now</Button>
