@@ -78,16 +78,16 @@ const Payment = () => {
               </div>
               <div className="absolute bottom-[2rem]">
                 <p className="text-[1.5rem] font-black lg:pb-[0rem] pb-[1rem]">Total Payment</p>
-                <p className="text-[1.5rem] font-black lg:hidden">Rp120,000</p>
+                {voucher !== "" ? <p className="text-[1.5rem] font-black lg:hidden">Rp70,000</p> : <p className="text-[1.5rem] font-black lg:hidden">Rp120,000</p>}
               </div>
             </div>
             <div>
               <div>
                 <p className="mb-[1.5rem]">Rp120,000</p>
-                {voucher !== "" ? <p>Rp{voucher}</p> : <p></p>}
+                {voucher !== "" ? <p>-Rp50,000</p> : <p></p>}
               </div>
               <div className="absolute bottom-[2rem] right-[1rem] lg:block hidden">
-                <p className="text-[1.5rem] font-black">Rp120,000</p>
+                {voucher !== "" ? <p className="text-[1.5rem] font-black">Rp70,000</p> : <p className="text-[1.5rem] font-black">Rp120,000</p>}
               </div>
             </div>
             
