@@ -19,7 +19,7 @@ const Footer = () => {
         <p className="font-[500] pb-[1rem]">“it's everyone's right to be healthy mentally and physically”</p>
         <div className="flex flex-row pb-[1.3rem] justify-between sm:justify-start sm:gap-[1.5rem] lg:gap-[2.5rem]">
           <div><a href="http://www.instagram.com/mealth_id"><FontAwesomeIcon icon={faInstagram} className="bg-red w-[28px] p-[10px] text-[28px] rounded-full hover:opacity-70"/></a></div>
-          <div><a href="http://www.linkedin.com/in/mealth-community"><FontAwesomeIcon icon={faLinkedin} className="bg-red w-[28px] p-[10px] text-[28px] rounded-full hover:opacity-70"/></a></div>
+          <div><a href="https://www.linkedin.com/company/mealthcommunity/"><FontAwesomeIcon icon={faLinkedin} className="bg-red w-[28px] p-[10px] text-[28px] rounded-full hover:opacity-70"/></a></div>
           <div><a href="https://www.tiktok.com/@mealthid"><FontAwesomeIcon icon={faTiktok} className="bg-red w-[28px] p-[10px] text-[28px] rounded-full hover:opacity-70"/></a></div>
           <div><a href="mailto:mealthcommunity@gmail.com"><FontAwesomeIcon icon={faEnvelope} className="bg-red w-[28px] p-[10px] text-[28px] rounded-full hover:opacity-70"/></a></div>
         </div>
