@@ -54,7 +54,7 @@ const Konsultasi = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button className="bg-green hover:bg-spurple hover:font-normal w-36">Book Now</Button>
+              <a href="/Payment"><Button className="bg-green hover:bg-spurple hover:font-normal w-36">Book Now</Button></a>
             </a>
           </div>
         </div>
