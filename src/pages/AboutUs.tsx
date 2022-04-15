@@ -117,7 +117,7 @@ const About = () => {
           </div>
           <div className="px-[8vw]">
             <h1 className="text-7xl pt-24 mb-12 text-white">Contact Us</h1>
-            <Button className="bg-red w-full text-white cursor-default">+62 813-9448-7780</Button>
+            <a href="https://wa.wizard.id/5cbb23"><Button className="bg-red w-full text-white hover:bg-spurple">+62 813-9448-7780</Button></a>
           </div>
         </div>
       </div>
