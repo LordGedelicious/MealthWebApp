@@ -6,6 +6,7 @@ import Chat from "../images/konsultasi/chat.svg";
 import Call from "../images/konsultasi/call.svg";
 import Vid from "../images/konsultasi/vid.svg";
 import Mascot from "../images/mascot-love.png";
+import { useLocation } from "wouter";
 
 const Konsultasi = () => {
   // HARGA-HARGA
@@ -16,12 +17,12 @@ const Konsultasi = () => {
   const HargaNyamanVidConsultation = "Rp1.650.000";
   const HargaBahagiaCallConsultation = "Rp2.580.000";
   const HargaBahagiaVidConsultation = "Rp2.860.000";
-  
   const openFormInNewTab = () => {
     let url = "https://google.com";
     const newWindow = window.open(url, "_blank", "noopener,noreferrer");
     if (newWindow) newWindow.opener = null;
   };
+  const [location, setLocation] = useLocation();
   return (
     <div className="bg-blue">
       <div className="min-h-[130vh] w-full bg-[url('/src/images/bg/BGKonselingPage.svg')] bg-cover bg-no-repeat text-black">
@@ -31,7 +32,9 @@ const Konsultasi = () => {
             <img src={Mid} className="" />
             <h1 className="text-6xl mb-12">Consultation</h1>
             <p>Yuk konsultasi dengan para ahli!</p>
-            <a href="#contentKonsultasi"><Button className="bg-green hover:bg-sblue mt-12 w-[18rem]">Konsultasi Sekarang</Button></a>
+            <a href="#contentKonsultasi">
+              <Button className="bg-green hover:bg-sblue mt-12 w-[18rem]">Konsultasi Sekarang</Button>
+            </a>
           </div>
           <img src={Right} className="w-[15%]" />
         </div>
@@ -78,7 +81,15 @@ const Konsultasi = () => {
           </div>
           <div className="flex flex-col items-center">
             <h3>{HargaCallConsultation}</h3>
-            <Button className="bg-green hover:bg-spurple hover:font-normal w-36">Book Now</Button>
+            <Button
+              className="bg-green hover:bg-spurple hover:font-normal w-36"
+              onClick={(e) => {
+                setLocation("/payment/CallConsultation");
+                openFormInNewTab();
+              }}
+            >
+              Book Now
+            </Button>
           </div>
         </div>
 
@@ -92,7 +103,15 @@ const Konsultasi = () => {
           </div>
           <div className="flex flex-col items-center">
             <h3>{HargaVidConsultation}</h3>
-            <Button className="bg-green hover:bg-spurple hover:font-normal w-36">Book Now</Button>
+            <Button
+              className="bg-green hover:bg-spurple hover:font-normal w-36"
+              onClick={(e) => {
+                setLocation("/payment/VideoConferenceConsultation");
+                openFormInNewTab();
+              }}
+            >
+              Book Now
+            </Button>
           </div>
         </div>
 
@@ -114,7 +133,15 @@ const Konsultasi = () => {
               </div>
               <div className="flex flex-col items-center">
                 <h3>{HargaNyamanCallConsultation}</h3>
-                <Button className="bg-green hover:bg-spurple hover:font-normal w-36">Book Now</Button>
+                <Button
+                  className="bg-green hover:bg-spurple hover:font-normal w-36"
+                  onClick={(e) => {
+                    setLocation("/payment/NyamanCallConsultation");
+                    openFormInNewTab();
+                  }}
+                >
+                  Book Now
+                </Button>
               </div>
             </div>
             <div className="w-full h-0.5 rounded-xl bg-black my-3" />
@@ -125,7 +152,15 @@ const Konsultasi = () => {
               </div>
               <div className="flex flex-col items-center">
                 <h3>{HargaNyamanVidConsultation}</h3>
-                <Button className="bg-green hover:bg-spurple hover:font-normal w-36">Book Now</Button>
+                <Button
+                  className="bg-green hover:bg-spurple hover:font-normal w-36"
+                  onClick={(e) => {
+                    setLocation("/payment/NyamanVidConsultation");
+                    openFormInNewTab();
+                  }}
+                >
+                  Book Now
+                </Button>
               </div>
             </div>
           </div>
@@ -150,7 +185,15 @@ const Konsultasi = () => {
               </div>
               <div className="flex flex-col items-center">
                 <h3>{HargaBahagiaCallConsultation}</h3>
-                <Button className="bg-green hover:bg-spurple hover:font-normal w-36">Book Now</Button>
+                <Button
+                  className="bg-green hover:bg-spurple hover:font-normal w-36"
+                  onClick={(e) => {
+                    setLocation("/payment/BahagiaCallConsultation");
+                    openFormInNewTab();
+                  }}
+                >
+                  Book Now
+                </Button>
               </div>
             </div>
             <div className="w-full h-0.5 rounded-xl bg-black my-3" />
@@ -161,12 +204,19 @@ const Konsultasi = () => {
               </div>
               <div className="flex flex-col items-center">
                 <h3>{HargaBahagiaVidConsultation}</h3>
-                <Button className="bg-green hover:bg-spurple hover:font-normal w-36">Book Now</Button>
+                <Button
+                  className="bg-green hover:bg-spurple hover:font-normal w-36 "
+                  onClick={(e) => {
+                    setLocation("/payment/BahagiaVidConsultation");
+                    openFormInNewTab();
+                  }}
+                >
+                  Book Now
+                </Button>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   );

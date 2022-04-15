@@ -1,39 +1,76 @@
-import { FormControl, FormControlLabel, FormLabel, Radio, RadioGroup } from "@mui/material";
+import { FormControl, FormControlLabel, FormLabel, Radio, RadioGroup, TextField } from "@mui/material";
+import { orange } from "@mui/material/colors";
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { useRoute } from "wouter";
 import Button from "../components/Button";
-
+import { useLocation } from "wouter";
 
 const Payment = () => {
+  // DATA YG PERLU DITENTUIN DI AWAL
+  const paymentMethodOptions = ["pake uang", "pake daun", "pake doa"];
+  const voucherList = ["GOJEKINAJA", "DITRAKTIRGOJEK"];
+  const minusVoucher = 50000;
+  const consultationList = {
+    ChatConsultation: 120000,
+    CallConsultation: 250000,
+    VideoConferenceConsultation: 350000,
+    NyamanCallConsultation: 1440000,
+    NyamanVidConsultation: 1650000,
+    BahagiaCallConsultation: 2580000,
+    BahagiaVidConsultation: 2860000,
+  };
+  // DATA YG PERLU DITENTUIN DI AWAL
+
   const [voucher, setVoucher] = useState("");
-  const [paymentMethod, setPaymentMethod] = useState("pake doa");
+  const [isVoucherValid, setIsVoucherValid] = useState(false);
+  const [paymentMethod, setPaymentMethod] = useState(paymentMethodOptions[0]);
+  const [location, setLocation] = useLocation();
+
+  const [match, params] = useRoute("/payment/:consultationType");
+  // kalau consultationType tidak ada di consultationList, maka redirect ke 404
+  if (!(match && params.consultationType in consultationList)) {
+    console.log(match);
+    console.log(params.consultationType);
+    // apakah params consultation type merupakan key di consultationlist
+    console.log(consultationList[params.consultationType]);
+
+    setLocation(`/404`);
+  }
   return (
-    <div className="pt-[8rem] lg:pl-[10rem] lg:px-[3.625rem] px-[2rem] pb-[3rem] align-center min-h-[40rem] bg-white">
-      <a href="/Konsultasi"><FontAwesomeIcon icon={faArrowLeft} className="w-[28px] text-[28px] hover:opacity-70 mb-[1rem]"/></a>
-      <h1 className="text-left text-[3rem] mb-[1.125rem] font-normal">
-          Payment
-      </h1>
-      <div className="justify-around flex flex-col lg:flex-row lg:justify-between pb-[2rem]">
-        
+    <div className="pt-[6rem] align-center min-h-[40rem] m-[1rem]">
+      <h1 className="text-center text-[2rem] md:text-[5rem] mb-[1rem]">payment</h1>
+
+      <div className="flex justify-around flex flex-col md:flex-row">
         {/* left side */}
-        <div className="lg:basis-2/3 md:basis-1/2 lg:pr-[5rem] lg:pt-[3rem]">
+        <div className=" min-w-[40%]">
           {/* voucher */}
-          <div className="">
-            <h1 className="text-[2rem] font-normal">Voucher</h1>
+          <div className=" my-[2rem]">
+            <h1>voucher</h1>
+            {/* <TextField
+              fullWidth
+              variant="outlined"
+              color="info"
+              label="voucher"
+              value={voucher}
+              borderColor="orange"
+              onChange={(e) => {
+                setVoucher(e.target.value);
+                setIsVoucherValid(voucherList.includes(e.target.value));
+              }}
+            /> */}
             <input
-              className="border-2 w-full border-orange bg-white rounded-[1rem] p-[1rem] mb-[2rem] font-sans"
-              type="Masukkan Voucher"
+              className=" outline-0 min-w-full border-red border-[3px] rounded-xl py-2 px-4 my-[1rem]"
               value={voucher}
               onChange={(e) => {
                 setVoucher(e.target.value);
+                setIsVoucherValid(voucherList.includes(e.target.value));
               }}
             />
           </div>
           {/* voucher */}
           {/* payment method */}
-          <div className="mb-[3rem]">
-            <h1 className="text-[2rem] font-normal">Payment Method</h1>
+          <div>
+            <h1>Payment Method</h1>
             <FormControl>
               <RadioGroup
                 aria-labelledby="payment-method-buttons-group-label"
@@ -43,24 +80,24 @@ const Payment = () => {
                   setPaymentMethod(e.target.value);
                 }}
               >
-                <FormControlLabel value="payment-method-1" control={<Radio sx={{
-                    color: "#F6B05E",
-                    '&.Mui-checked': {
-                      color: "#F6B05E",
-                    },
-                  }} />} label="Payment Method 1"/>
-                <FormControlLabel value="payment-method-2" control={<Radio sx={{
-                    color: "#F6B05E",
-                    '&.Mui-checked': {
-                      color: "#F6B05E",
-                    },
-                  }} />} label="Payment Method 2" />
-                <FormControlLabel value="payment-method-3" control={<Radio sx={{
-                    color: "#F6B05E",
-                    '&.Mui-checked': {
-                      color: "#F6B05E",
-                    },
-                  }} />} label="Payment Method 3" />
+                {paymentMethodOptions.map((paymentMethod) => {
+                  return (
+                    <FormControlLabel
+                      value={paymentMethod}
+                      control={
+                        <Radio
+                          sx={{
+                            color: orange[800],
+                            "&.Mui-checked": {
+                              color: orange[600],
+                            },
+                          }}
+                        />
+                      }
+                      label={paymentMethod}
+                    />
+                  );
+                })}
               </RadioGroup>
             </FormControl>
           </div>
@@ -68,37 +105,50 @@ const Payment = () => {
         </div>
         {/* left side */}
         {/* right side */}
-        <div className="bg-spurple text-[#FFF] min-h-[25rem] rounded-[2rem] p-[2rem] lg:basis-1/3 md:basis-1/2 relative">
-          <h1 className="text-[3rem] lg:pb-[3rem] pb-[1rem] font-normal">Summary</h1>
-          <div className="flex flex-row justify-between h-full">
-            <div className="h-60 flex flex-col justify-between">
-              <div>
-                <p className="mb-[1.5rem]">Chat Consultation</p>
-                {voucher !== "" ? <p>Voucher</p> : <p></p>}
+        <div className="  min-w-[40%] bg-red text-white min-h-full rounded-xl p-[1rem]">
+          <h1 className="text-center mb-[2rem] ">summary</h1>
+          <div className="flex flex-col min-h-[70%] justify-between mx-4">
+            <div className="text-xl">
+              {/* selain total payment */}
+              {voucher === "" ? (
+                <div className="">Tidak menggunakan voucher</div>
+              ) : isVoucherValid ? (
+                <div className="flex justify-between my-[1rem]">
+                  <div>{voucher} </div>
+                  <div>-Rp{minusVoucher}</div>
+                </div>
+              ) : (
+                <div className="flex justify-between my-[1rem]">
+                  <div>ada voucher </div>
+                  <div>{voucher}</div>
+                </div>
+              )}
+              <div className="flex justify-between my-[1rem]">
+                <div>{params.consultationType}</div>
+                <div>Rp{consultationList[params.consultationType]}</div>
               </div>
-              <div className="flex justify-between flex-wrap bottom-[2rem] self-end justify-self-end">
-                <p className="text-[1.5rem] font-black lg:pb-[0rem] pb-[1rem] ">Total Payment &nbsp;</p>
-                {voucher !== "" ? <p className="text-[1.5rem] font-black lg:hidden">Rp70,000</p> : <p className="text-[1.5rem] font-black lg:hidden">Rp120,000</p>}
+              <div className="flex justify-between my-[1rem]">
+                <div>payment method</div>
+                <div>{paymentMethod}</div>
               </div>
+              {/* selain total payment */}
             </div>
-            <div>
-              <div>
-                <p className="mb-[1.5rem]">Rp120,000</p>
-                {voucher !== "" ? <p>-Rp50,000</p> : <p></p>}
+            <div className="">
+              {/* total payment */}
+              <div className="flex justify-between my-[1rem] text-2xl font-bold">
+                <div>Total Payment</div>
+                <div>Rp{isVoucherValid ? consultationList[params.consultationType] - minusVoucher : consultationList[params.consultationType]}</div>
               </div>
-              <div className="absolute bottom-[2rem] right-[1rem] lg:block hidden">
-                {voucher !== "" ? <p className="text-[1.5rem] font-black">Rp70,000</p> : <p className="text-[1.5rem] font-black">Rp120,000</p>}
-              </div>
+              {/* total payment */}
             </div>
-            
           </div>
         </div>
         {/* right side */}
       </div>
       {/* button */}
-      <div className="text-center">
-        <a href="/">
-          <Button className="bg-green my-1 w-[12rem]">Pay & Confirm</Button>
+      <div className="justify-center text-center mt-[2rem] md:mt-[5rem] mb-[2rem]">
+        <a href="/gformmaybe">
+          <Button className="bg-orange w-full hover:bg-spurple my-1 max-w-[20%] ">Pay {"&"} Confirm</Button>
         </a>
       </div>
       {/* button */}
