@@ -85,7 +85,7 @@ const About = () => {
                 </div>
               </Button>
             </a>
-            <a href="https://www.linkedin.com/in/mealth-community" className="w-full">
+            <a href="https://www.linkedin.com/company/mealthcommunity/ " className="w-full">
               <Button className="bg-red text-white hover:bg-spurple my-1 w-full">
                 <div className="grid grid-rows-1 grid-cols-[2rem,auto] w-full">
                   <img src={LinkedIn} alt="LinkedIn:" className="w-6 h-6" />

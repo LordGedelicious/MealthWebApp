@@ -25,7 +25,7 @@ const Konsultasi = () => {
           <div className="flex flex-col w-[70%] md:w-[65%] lg:w-[40%] text-center items-center">
             <img src={Mid} className="" />
             <h1 className="text-6xl mb-12">Consultation</h1>
-            <p>Yuk konsultasi dengan yang ahli!</p>
+            <p>Yuk konsultasi dengan para ahli!</p>
             <a href="#contentKonsultasi"><Button className="bg-green hover:bg-sblue mt-12 w-[18rem]">Konsultasi Sekarang</Button></a>
           </div>
           <img src={Right} className="w-[15%]" />
@@ -45,7 +45,7 @@ const Konsultasi = () => {
             <img src={Chat} className="w-12 h-12 bg-red rounded-full object-contain p-3 mr-3" />
             <div>
               <h2>Chat Consultation</h2>
-              <p>Available only for psychologist and Nutritionist</p>
+              <p>Tersedia untuk Psikolog dan Ahli Gizi</p>
             </div>
           </div>
           <div className="flex flex-col items-center">
@@ -61,7 +61,7 @@ const Konsultasi = () => {
             <img src={Call} className="w-12 h-12 bg-red rounded-full object-contain p-3 mr-3" />
             <div>
               <h2>Call Consultation</h2>
-              <p>Available only for psychologist and Nutritionist</p>
+              <p>Tersedia untuk Psikolog dan Ahli Gizi</p>
             </div>
           </div>
           <div className="flex flex-col items-center">
@@ -75,7 +75,7 @@ const Konsultasi = () => {
             <img src={Vid} className="w-12 h-12 bg-red rounded-full object-contain p-3 mr-3" />
             <div>
               <h2>Video Conference Consultation</h2>
-              <p>Available only for psychologist, psychiatrist, and Nutritionist</p>
+              <p>Tersedia untuk Psikolog, Psikiater, dan Ahli Gizi</p>
             </div>
           </div>
           <div className="flex flex-col items-center">
@@ -88,10 +88,10 @@ const Konsultasi = () => {
           <div className="p-6">
             <h2>Paket Nyaman</h2>
             <ul>
-              <li>3x consultation with the psychologist</li>
-              <li>2x consultation with the psychiatrist</li>
-              <li>Access to premium features</li>
-              <li>Follow-up assessment from the expertise</li>
+              <li>3x konsultasi dengan Psikolog</li>
+              <li>2x konsultasi dengan Psikiater</li>
+              <li>Akses ke fitur premium Mealth</li>
+              <li>Mendapatkan asesmen lanjutan dari Para Ahli</li>
             </ul>
           </div>
           <div className="bg-white rounded-xl p-6">
@@ -123,11 +123,11 @@ const Konsultasi = () => {
           <div className="p-6">
             <h2>Paket Bahagia</h2>
             <ul>
-              <li>5x consultation with the psychologist</li>
-              <li>3x consultation with the psychiatrist</li>
-              <li>2x consultation with the nutritionist</li>
-              <li>Access to premium features</li>
-              <li>Follow-up assessment from the expertise</li>
+              <li>5x konsultasi dengan Psikolog</li>
+              <li>3x konsultasi dengan Psikiater</li>
+              <li>2x konsultasi dengan Ahli Gizi</li>
+              <li>Akses ke fitur premium Mealth</li>
+              <li>Mendapatkan asesmen lanjutan dari Para Ahli</li>
             </ul>
           </div>
           <div className="bg-white rounded-xl p-6">
