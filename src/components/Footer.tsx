@@ -53,6 +53,13 @@ const Footer = () => {
           <a href="/About" className="mb-[1.5rem] block hover:underline hover:transition ease-in-out delay-150">ABOUT US</a>
           <a href="/TermsAndConditions" className="mb-[1.5rem] block hover:underline hover:transition ease-in-out delay-150">TERMS AND CONDITIONS</a>
           <a href="/PrivacyPolicy" className="mb-[1.5rem] block hover:underline hover:transition ease-in-out delay-150">PRIVACY POLICY</a>
+          <a href="https://forms.gle/skzNiix44vi6D5LP7"
+            target="_blank"
+            rel="noopener noreferrer" 
+            className="mb-[1.5rem] block hover:underline hover:transition ease-in-out delay-150"
+          >
+              WEBAPP FEEDBACK
+          </a>
         </div>
       </div>
     </div>
