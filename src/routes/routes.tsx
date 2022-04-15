@@ -38,7 +38,7 @@ export const KONSULTASI_PAGE = toRoute("Konsultasi", "/Konsultasi", Konsultasi);
 
 export const EVENTS_PAGE = toRoute("Events", "/Events", Events);
 
-export const PAYMENT_PAGE = toRoute("Payment", "/Payment", Payment);
+export const PAYMENT_PAGE = toRoute("Payment", "/Payment/:consultationType", Payment);
 
 export const NOTFOUND_PAGE = toRoute("Not Found", "/:rest*", NotFound);
 
