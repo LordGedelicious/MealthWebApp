@@ -9,7 +9,7 @@ const Payment = () => {
   const [voucher, setVoucher] = useState("");
   const [paymentMethod, setPaymentMethod] = useState("pake doa");
   return (
-    <div className="pt-[8rem] lg:pl-[10rem] px-[3.625rem]  pb-[3rem] align-center min-h-[40rem] bg-white">
+    <div className="pt-[8rem] lg:pl-[10rem] lg:px-[3.625rem] px-[2rem] pb-[3rem] align-center min-h-[40rem] bg-white">
       <a href="/Konsultasi"><FontAwesomeIcon icon={faArrowLeft} className="w-[28px] text-[28px] hover:opacity-70 mb-[1rem]"/></a>
       <h1 className="text-left text-[3rem] mb-[1.125rem] font-normal">
           Payment
@@ -17,7 +17,7 @@ const Payment = () => {
       <div className="justify-around flex flex-col lg:flex-row lg:justify-between pb-[2rem]">
         
         {/* left side */}
-        <div className="lg:basis-2/3 md:basis-1/2 lg:pr-[5rem] pr-[3rem] lg:pt-[3rem]">
+        <div className="lg:basis-2/3 md:basis-1/2 lg:pr-[5rem] lg:pt-[3rem]">
           {/* voucher */}
           <div className="">
             <h1 className="text-[2rem] font-normal">Voucher</h1>
@@ -68,7 +68,7 @@ const Payment = () => {
         </div>
         {/* left side */}
         {/* right side */}
-        <div className="bg-spurple text-[#FFF] min-h-[20rem] rounded-[2rem] p-[2rem] lg:basis-1/3 md:basis-1/2 relative pb-[2rem] ">
+        <div className="bg-spurple text-[#FFF] min-h-[25rem] rounded-[2rem] p-[2rem] lg:basis-1/3 md:basis-1/2 relative">
           <h1 className="text-[3rem] lg:pb-[3rem] pb-[1rem] font-normal">Summary</h1>
           <div className="flex flex-row justify-between">
             <div>
@@ -77,7 +77,8 @@ const Payment = () => {
                 {voucher !== "" ? <p>Voucher</p> : <p></p>}
               </div>
               <div className="absolute bottom-[2rem]">
-                <p className="text-[1.5rem] font-black">Total Payment</p>
+                <p className="text-[1.5rem] font-black lg:pb-[0rem] pb-[1rem]">Total Payment</p>
+                <p className="text-[1.5rem] font-black lg:hidden">Rp120,000</p>
               </div>
             </div>
             <div>
@@ -85,7 +86,7 @@ const Payment = () => {
                 <p className="mb-[1.5rem]">Rp120,000</p>
                 {voucher !== "" ? <p>Rp{voucher}</p> : <p></p>}
               </div>
-              <div className="absolute bottom-[2rem] right-[1rem]">
+              <div className="absolute bottom-[2rem] right-[1rem] lg:block hidden">
                 <p className="text-[1.5rem] font-black">Rp120,000</p>
               </div>
             </div>
