@@ -16,7 +16,12 @@ const Konsultasi = () => {
   const HargaNyamanVidConsultation = "Rp1.650.000";
   const HargaBahagiaCallConsultation = "Rp2.580.000";
   const HargaBahagiaVidConsultation = "Rp2.860.000";
-
+  
+  const openFormInNewTab = () => {
+    let url = "https://google.com";
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+    if (newWindow) newWindow.opener = null;
+  };
   return (
     <div className="bg-blue">
       <div className="min-h-[130vh] w-full bg-[url('/src/images/bg/BGKonselingPage.svg')] bg-cover bg-no-repeat text-black">
@@ -50,12 +55,16 @@ const Konsultasi = () => {
           </div>
           <div className="flex flex-col items-center">
             <h3>{HargaChatConsultation}</h3>
-            <a href="https://forms.gle/eZ5TxPPMfZem4JP27" 
-              target="_blank"
-              rel="noopener noreferrer"
+            <Button
+              className="bg-green hover:bg-spurple hover:font-normal w-36"
+              onClick={(e) => {
+                // console.log("testing");
+                setLocation("/payment/ChatConsultation");
+                openFormInNewTab();
+              }}
             >
-              <a href="/Payment"><Button className="bg-green hover:bg-spurple hover:font-normal w-36">Book Now</Button></a>
-            </a>
+              Book Now
+            </Button>
           </div>
         </div>
 
