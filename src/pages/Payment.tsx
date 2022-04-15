@@ -1,22 +1,29 @@
 import { FormControl, FormControlLabel, FormLabel, Radio, RadioGroup } from "@mui/material";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import Button from "../components/Button";
+
+
 const Payment = () => {
   const [voucher, setVoucher] = useState("");
   const [paymentMethod, setPaymentMethod] = useState("pake doa");
   return (
-    <div className="pt-[10rem] align-center min-h-[40rem] border-2 border-black">
-      <h1 className="border-2 border-black text-center ">payment</h1>
-
-      <div className="flex border-2 border-black justify-around flex flex-col md:flex-row">
+    <div className="pt-[8rem] pl-[10rem] px-[3.625rem] align-center min-h-[40rem] bg-white">
+      <a href="/Konsultasi"><FontAwesomeIcon icon={faArrowLeft} className="w-[28px] text-[28px] hover:opacity-70 mb-[1rem]"/></a>
+      <h1 className="text-left text-[3rem] mb-[1.125rem] font-normal">
+          Payment
+      </h1>
+      <div className="justify-around flex flex-col md:flex-row md:justify-between pb-[3rem]">
+        
         {/* left side */}
-        <div className="border-[1px] border-black min-w-[40%]">
+        <div className="basis-2/3 md:pr-[5rem] md:pt-[3rem]">
           {/* voucher */}
-          <div className="border-2">
-            <h1>voucher</h1>
+          <div className="">
+            <h1 className="text-[2rem] font-normal">Voucher</h1>
             <input
-              className="border-2 min-h-full"
-              type="text"
+              className="border-2 w-full border-orange bg-white rounded-[1rem] p-[1rem] mb-[2rem] font-sans"
+              type="Masukkan Voucher"
               value={voucher}
               onChange={(e) => {
                 setVoucher(e.target.value);
@@ -25,8 +32,8 @@ const Payment = () => {
           </div>
           {/* voucher */}
           {/* payment method */}
-          <div>
-            <h1>payment method</h1>
+          <div className="mb-[3rem]">
+            <h1 className="text-[2rem] font-normal">Payment Method</h1>
             <FormControl>
               <RadioGroup
                 aria-labelledby="payment-method-buttons-group-label"
@@ -36,30 +43,64 @@ const Payment = () => {
                   setPaymentMethod(e.target.value);
                 }}
               >
-                <FormControlLabel value="pake uang" control={<Radio />} label="pake uang" />
-                <FormControlLabel value="pake daun" control={<Radio />} label="pake daun" />
-                <FormControlLabel value="pake doa" control={<Radio />} label="pake doa" />
+                <FormControlLabel value="payment-method-1" control={<Radio sx={{
+                    color: "#F6B05E",
+                    '&.Mui-checked': {
+                      color: "#F6B05E",
+                    },
+                  }} />} label="Payment Method 1"/>
+                <FormControlLabel value="payment-method-2" control={<Radio sx={{
+                    color: "#F6B05E",
+                    '&.Mui-checked': {
+                      color: "#F6B05E",
+                    },
+                  }} />} label="Payment Method 2" />
+                <FormControlLabel value="payment-method-3" control={<Radio sx={{
+                    color: "#F6B05E",
+                    '&.Mui-checked': {
+                      color: "#F6B05E",
+                    },
+                  }} />} label="Payment Method 3" />
               </RadioGroup>
             </FormControl>
           </div>
           {/* payment method */}
+          {/* button */}
+          <div className="text-right">
+            <a href="/">
+              <Button className="bg-green my-1 w-[12rem]">Pay & Confirm</Button>
+            </a>
+          </div>
+          {/* button */}
         </div>
         {/* left side */}
         {/* right side */}
-        <div className="border-[1px] border-black min-w-[40%] bg-red text-white min-h-full rounded-xl p-[1rem]">
-          <h1 className="text-center">summary</h1>
-          {voucher !== "" ? <div>ada voucher : {voucher}</div> : <div>tidak ada voucher</div>}
-          <div>payment method : {paymentMethod}</div>
+        <div className="bg-spurple text-[#FFF] min-h-full rounded-[2rem] p-[2rem] basis-1/3 relative">
+          <h1 className="text-[3rem] pb-[3rem] font-normal">Summary</h1>
+          <div className="flex flex-row justify-between">
+            <div>
+              <div>
+                <p className="mb-[1.5rem]">Chat Consultation</p>
+                {voucher !== "" ? <p>Voucher</p> : <p></p>}
+              </div>
+              <div className="absolute bottom-[2rem]">
+                <p className="text-[1.5rem] font-black">Total Payment</p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <p className="mb-[1.5rem]">Rp120,000</p>
+                {voucher !== "" ? <p>Rp{voucher}</p> : <p></p>}
+              </div>
+              <div className="absolute bottom-[2rem]">
+                <p className="text-[1.5rem] font-black">120,000</p>
+              </div>
+            </div>
+            
+          </div>
         </div>
         {/* right side */}
       </div>
-      {/* button */}
-      <div className="justify-center text-center">
-        <a href="/gformmaybe">
-          <Button className="bg-orange w-full hover:bg-spurple my-1 max-w-[20%] ">aa</Button>
-        </a>
-      </div>
-      {/* button */}
     </div>
   );
 };

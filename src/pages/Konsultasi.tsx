@@ -48,7 +48,9 @@ const Konsultasi = () => {
           </div>
           <div className="flex flex-col items-center">
             <h3>{HargaChatConsultation}</h3>
-            <Button className="bg-green hover:bg-spurple hover:font-normal w-36">Book Now</Button>
+            <a href="/Payment">
+              <Button className="bg-green hover:bg-spurple hover:font-normal w-36">Book Now</Button>
+            </a>
           </div>
         </div>
 
