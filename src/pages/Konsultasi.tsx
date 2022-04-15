@@ -50,7 +50,10 @@ const Konsultasi = () => {
           </div>
           <div className="flex flex-col items-center">
             <h3>{HargaChatConsultation}</h3>
-            <a href="/Payment">
+            <a href="https://forms.gle/eZ5TxPPMfZem4JP27" 
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button className="bg-green hover:bg-spurple hover:font-normal w-36">Book Now</Button>
             </a>
           </div>
