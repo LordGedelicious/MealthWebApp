@@ -70,14 +70,14 @@ const Payment = () => {
         {/* right side */}
         <div className="bg-spurple text-[#FFF] min-h-[25rem] rounded-[2rem] p-[2rem] lg:basis-1/3 md:basis-1/2 relative">
           <h1 className="text-[3rem] lg:pb-[3rem] pb-[1rem] font-normal">Summary</h1>
-          <div className="flex flex-row justify-between">
-            <div>
+          <div className="flex flex-row justify-between h-full">
+            <div className="h-60 flex flex-col justify-between">
               <div>
                 <p className="mb-[1.5rem]">Chat Consultation</p>
                 {voucher !== "" ? <p>Voucher</p> : <p></p>}
               </div>
-              <div className="absolute bottom-[2rem]">
-                <p className="text-[1.5rem] font-black lg:pb-[0rem] pb-[1rem]">Total Payment</p>
+              <div className="flex justify-between flex-wrap bottom-[2rem] self-end justify-self-end">
+                <p className="text-[1.5rem] font-black lg:pb-[0rem] pb-[1rem] ">Total Payment &nbsp;</p>
                 {voucher !== "" ? <p className="text-[1.5rem] font-black lg:hidden">Rp70,000</p> : <p className="text-[1.5rem] font-black lg:hidden">Rp120,000</p>}
               </div>
             </div>
