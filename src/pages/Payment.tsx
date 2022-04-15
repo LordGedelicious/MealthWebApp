@@ -9,15 +9,15 @@ const Payment = () => {
   const [voucher, setVoucher] = useState("");
   const [paymentMethod, setPaymentMethod] = useState("pake doa");
   return (
-    <div className="pt-[8rem] pl-[10rem] px-[3.625rem] align-center min-h-[40rem] bg-white">
+    <div className="pt-[8rem] lg:pl-[10rem] px-[3.625rem]  pb-[3rem] align-center min-h-[40rem] bg-white">
       <a href="/Konsultasi"><FontAwesomeIcon icon={faArrowLeft} className="w-[28px] text-[28px] hover:opacity-70 mb-[1rem]"/></a>
       <h1 className="text-left text-[3rem] mb-[1.125rem] font-normal">
           Payment
       </h1>
-      <div className="justify-around flex flex-col md:flex-row md:justify-between pb-[3rem]">
+      <div className="justify-around flex flex-col lg:flex-row lg:justify-between pb-[2rem]">
         
         {/* left side */}
-        <div className="basis-2/3 md:pr-[5rem] md:pt-[3rem]">
+        <div className="lg:basis-2/3 md:basis-1/2 lg:pr-[5rem] pr-[3rem] lg:pt-[3rem]">
           {/* voucher */}
           <div className="">
             <h1 className="text-[2rem] font-normal">Voucher</h1>
@@ -65,18 +65,11 @@ const Payment = () => {
             </FormControl>
           </div>
           {/* payment method */}
-          {/* button */}
-          <div className="text-right">
-            <a href="/">
-              <Button className="bg-green my-1 w-[12rem]">Pay & Confirm</Button>
-            </a>
-          </div>
-          {/* button */}
         </div>
         {/* left side */}
         {/* right side */}
-        <div className="bg-spurple text-[#FFF] min-h-full rounded-[2rem] p-[2rem] basis-1/3 relative">
-          <h1 className="text-[3rem] pb-[3rem] font-normal">Summary</h1>
+        <div className="bg-spurple text-[#FFF] min-h-[20rem] rounded-[2rem] p-[2rem] lg:basis-1/3 md:basis-1/2 relative pb-[2rem] ">
+          <h1 className="text-[3rem] lg:pb-[3rem] pb-[1rem] font-normal">Summary</h1>
           <div className="flex flex-row justify-between">
             <div>
               <div>
@@ -92,8 +85,8 @@ const Payment = () => {
                 <p className="mb-[1.5rem]">Rp120,000</p>
                 {voucher !== "" ? <p>Rp{voucher}</p> : <p></p>}
               </div>
-              <div className="absolute bottom-[2rem]">
-                <p className="text-[1.5rem] font-black">120,000</p>
+              <div className="absolute bottom-[2rem] right-[1rem]">
+                <p className="text-[1.5rem] font-black">Rp120,000</p>
               </div>
             </div>
             
@@ -101,6 +94,13 @@ const Payment = () => {
         </div>
         {/* right side */}
       </div>
+      {/* button */}
+      <div className="text-center">
+        <a href="/">
+          <Button className="bg-green my-1 w-[12rem]">Pay & Confirm</Button>
+        </a>
+      </div>
+      {/* button */}
     </div>
   );
 };
