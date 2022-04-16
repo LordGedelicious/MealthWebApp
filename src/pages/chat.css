@@ -1,0 +1,74 @@
+.ChatApp {
+  text-align: center;
+  max-width: 728px;
+  margin: 0 auto;
+}
+
+.ChatApp header {
+  background-color: #181717;
+  height: 10vh;
+  min-height: 50px;
+  color: white;
+  position: fixed;
+  width: 100%;
+  max-width: 728px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.App section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(40, 37, 53);
+}
+
+.message {
+  display: flex;
+  align-items: center;
+}
+
+.sent {
+  flex-direction: row-reverse;
+}
+
+.sent p {
+  color: black;
+  background: #FFDE78;
+  align-self: flex-end;
+}
+.received p {
+  background: #C19AC7;
+  color: black;
+}
+
+.img-chat {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 2px 5px;
+}
+
+.chat-main {
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-main::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+.chat-main::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+.chat-main::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
