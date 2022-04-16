@@ -14,6 +14,6 @@ export const getChat = (chatId) => {
       console.log("chat", chat);
     });
   }, [chatId]);
-
-  return [chat, isLoading];
+  console.log(chat);
+  return chat;
 };
