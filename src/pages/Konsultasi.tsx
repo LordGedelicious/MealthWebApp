@@ -18,7 +18,7 @@ const Konsultasi = () => {
   const HargaBahagiaCallConsultation = "Rp2.580.000";
   const HargaBahagiaVidConsultation = "Rp2.860.000";
   const openFormInNewTab = () => {
-    let url = "https://google.com";
+    let url = "https://forms.gle/eZ5TxPPMfZem4JP27";
     const newWindow = window.open(url, "_blank", "noopener,noreferrer");
     if (newWindow) newWindow.opener = null;
   };
