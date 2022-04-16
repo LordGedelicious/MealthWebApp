@@ -24,43 +24,49 @@ const MeddyChat: FC<Props> = ({children}) => {
 
 
 const ChatBot = () => { 
-  const [chats, setChats] = useState([])
 
   const chatDataJSON = chatData[0].chatbotid;
   const [idChat, setIdChat] = useState(-1);
 
-  console.log(chatDataJSON);
+  const [chats, setChats] = useState([<MellyChat>{chatDataJSON[idChat+1].text}</MellyChat>])
+
+
   const addChat = (e: ChangeEvent<HTMLButtonElement>) => {
     e.preventDefault();
     setChats([...chats, <MeddyChat>e.currentTarget.value</MeddyChat>]);
     console.log(chats);
   };
 
-  function changeID(userinput, currentId) {
-    console.log(currentId);
+  function changeID(userinput) {
+    console.log(idChat);
     console.log(userinput);
-    if (userinput == chatDataJSON[currentId+1].query1 && chatDataJSON[currentId+1].query1 != "") {
+
+    console.log(chats);
+
+    if (userinput == chatDataJSON[idChat+1].query1 && chatDataJSON[idChat+1].query1 != "") {
       console.log("TC 1");
-      setIdChat(chatDataJSON[currentId+1].refer1);
-    } else if (userinput == chatDataJSON[currentId+1].query2 && chatDataJSON[currentId+1].query2 != "") {
+      console.log(chatDataJSON[idChat+1].refer1)
+      return (chatDataJSON[idChat+1].refer1);
+    } else if (userinput == chatDataJSON[idChat+1].query2 && chatDataJSON[idChat+1].query2 != "") {
       console.log("TC 2");
-      setIdChat(chatDataJSON[currentId+1].refer2);
-    } else if (userinput == chatDataJSON[currentId+1].query3 && chatDataJSON[currentId+1].query3 != "") {
+      return (chatDataJSON[idChat+1].refer2);
+    } else if (userinput == chatDataJSON[idChat+1].query3 && chatDataJSON[idChat+1].query3 != "") {
       console.log("TC 3");
-      setIdChat(chatDataJSON[currentId+1].refer3);
-    } else if (userinput == chatDataJSON[currentId+1].query4 && chatDataJSON[currentId+1].query4 != "") {
+      return (chatDataJSON[idChat+1].refer3);
+    } else if (userinput == chatDataJSON[idChat+1].query4 && chatDataJSON[idChat+1].query4 != "") {
       console.log("TC 4");
-      setIdChat(chatDataJSON[currentId+1].refer4);
-    } else if (userinput == chatDataJSON[currentId+1].query5 && chatDataJSON[currentId+1].query5 != "") {
+      return (chatDataJSON[idChat+1].refer4);
+    } else if (userinput == chatDataJSON[idChat+1].query5 && chatDataJSON[idChat+1].query5 != "") {
       console.log("TC 5");
-      setIdChat(chatDataJSON[currentId+1].refer5);
-    } else if (userinput == chatDataJSON[currentId+1].query6 && chatDataJSON[currentId+1].query6 != "") {
+      return (chatDataJSON[idChat+1].refer5);
+    } else if (userinput == chatDataJSON[idChat+1].query6 && chatDataJSON[idChat+1].query6 != "") {
       console.log("TC 6");
-      setIdChat(chatDataJSON[currentId+1].refer6);
+      return (chatDataJSON[currentId+1].refer6);
     } else {
       console.log("TC else");
-      setIdChat(-1);
+      return (-1);
     }
+
   }
 
   return (
@@ -69,8 +75,6 @@ const ChatBot = () => {
         {/* CHAT AREA */}
         {/* TODO: keep div scrolled to bottom */}
         <div className="flex flex-col w-full overflow-y-scroll overflow-x-hidden h-[30rem]">
-          <MellyChat>{chatDataJSON[idChat+1].text}
-          </MellyChat>
           {chats}
         </div>
         {/* INPUT */}
@@ -82,7 +86,7 @@ const ChatBot = () => {
                 e.preventDefault();
                 // TODO: masukin data
                 // you can get user input from `document.getElementById("input").value`
-                changeID(document.getElementById("input").value, idChat);
+                setIdChat(changeID(document.getElementById("input").value));
                 setChats([...chats, 
                   <MeddyChat>{document.getElementById("input").value}</MeddyChat>, 
                   <MellyChat>{chatDataJSON[idChat+1].text}</MellyChat>
