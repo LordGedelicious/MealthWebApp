@@ -7,7 +7,7 @@ import { useLocation } from "wouter";
 
 const Payment = () => {
   // DATA YG PERLU DITENTUIN DI AWAL
-  const paymentMethodOptions = ["pake uang", "pake daun", "pake doa"];
+  const paymentMethodOptions = ["E-Money", "debit/Credit Card", "Bank Transfer"];
   const voucherList = ["GOJEKINAJA", "DITRAKTIRGOJEK"];
   const minusVoucher = 50000;
   const consultationList = {
