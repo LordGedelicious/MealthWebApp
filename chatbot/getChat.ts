@@ -5,7 +5,7 @@ firebase;
 export const getChat = (chatId) => {
   const [chat, setChat] = useState(null);
   const db = getDatabase();
-  const chatbotidRef = ref(db, "chatbotid/" + chatId);
+  const chatbotidRef = ref(db, "chatbotid/" + (chatId + 1));
   useEffect(() => {
     onValue(chatbotidRef, (snapshot) => {
       setChat(snapshot.val());
@@ -13,7 +13,6 @@ export const getChat = (chatId) => {
       console.log(chat);
     });
   }, [chatId]);
-  // resolve promise
 
   return chat;
 };
