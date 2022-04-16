@@ -147,7 +147,7 @@ const Payment = () => {
       </div>
       {/* button */}
       <div className="justify-center text-center mt-[2rem] md:mt-[5rem] mb-[2rem]">
-        <a href="/gformmaybe">
+        <a href="/">
           <Button className="bg-orange w-full hover:bg-spurple my-1 max-w-[20%] ">Pay {"&"} Confirm</Button>
         </a>
       </div>

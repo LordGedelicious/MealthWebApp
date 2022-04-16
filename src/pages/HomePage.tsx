@@ -119,22 +119,7 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div className="flex flex-col lg:grid lg:grid-cols-3 lg:grid-rows-6 items-center h-[150vh] w-[100%] mt-24 pb-12 px-[10%] lg:px-12 relative bottom-72 z-10">
-            {/* LEFT */}
-            <div className="flex flex-col items-center lg:items-start px-[10%] lg:pl-24 col-start-1 row-start-1 row-span-6">
-              <h1 className="text-6xl mb-3">Melly Chatbot</h1>
-              <img src={MascotQuestion} className="w-full" />
-              <p>Tanyakan masalah yang sedang kamu alami dengan Bot Melly!</p>
-            </div>
-            {/* RIGHT */}
-            <div className="row-span-6 col-span-2 lg:grid lg:grid-rows-6 rounded-3xl bg-white shadow-md flex justify-between p-6 my-3">
-              <div className="ChatApp">
-                {<ChatRoom />}
-
-              </div>
-            </div>
-
-          </div>
+          
 
         </div>
       </div>
