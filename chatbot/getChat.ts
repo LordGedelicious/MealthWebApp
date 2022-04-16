@@ -1,15 +1,19 @@
 import { getDatabase, ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
 import firebase from "../firebase";
+firebase;
 export const getChat = (chatId) => {
-  firebase;
+  const [chat, setChat] = useState(null);
   const db = getDatabase();
   const chatbotidRef = ref(db, "chatbotid/" + chatId);
-  let data;
-  onValue(chatbotidRef, (snapshot) => {
-    data = snapshot.val();
-    // console.log("data");
-    // console.log(data);
-  });
+  useEffect(() => {
+    onValue(chatbotidRef, (snapshot) => {
+      setChat(snapshot.val());
 
-  return data;
+      console.log(chat);
+    });
+  }, [chatId]);
+  // resolve promise
+
+  return chat;
 };

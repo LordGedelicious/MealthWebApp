@@ -1,4 +1,6 @@
-import firebase from "firebase/compat/app";
+//print semua variable env
+console.log("process.env.APIKEY");
+console.log(process.env.APIKEY);
 const firebaseConfig = {
   apiKey: process.env.APIKEY,
   authDomain: process.env.AUTHDOMAIN,
@@ -9,9 +11,5 @@ const firebaseConfig = {
   appId: process.env.APPID,
   measurementId: process.env.MEASUREMENTID,
 };
-console.log("firebaseConfig");
-console.log(firebaseConfig);
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
 
-export default firebase;
+console.log(firebaseConfig);
