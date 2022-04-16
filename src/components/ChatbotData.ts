@@ -203,11 +203,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-<<<<<<< Updated upstream
-            "text": "Klik link dibawah ini ya!\n1. Join Community Mealth https://bit.ly/MealthGroupCommunity. \nInstagram Mealth https://www.instagram.com/mealth_id/. \nKonsultasi dengan psikolog ? link ke page consultation"
-=======
             "text": "Klik link dibawah ini ya!\\n1. Join Community Mealth https://bit.ly/MealthGroupCommunity. \\n2. Instagram Mealth https://www.instagram.com/mealth_id/. \\n3. Konsultasi dengan psikolog? mealth.netlify.app/Konsultasi"
->>>>>>> Stashed changes
           },
           {
             "id": 11,
