@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import ChatBot from "../components/ChatBot";
 import HomeImg from "../images/HomeImg.svg";
 import AcaraImg from "../images/AcaraImg.svg";
 import KonselingImg from "../images/KonselingImg.svg";
@@ -12,7 +13,10 @@ import Button from "../components/Button";
 import MascotQuestion from "../images/mascot-question.png";
 
 
+
 const HomePage = () => {
+
+
   return (
     <>
       <div className="bg-white">
@@ -42,7 +46,7 @@ const HomePage = () => {
             </div>
             
           </div>
-          <div className="h-[120vh] bg-[url('/src/images/bg/BGBotchat.svg')] bg-no-repeat bg-cover bg-top h-[150vh] w-[100%] flex flex-col lg:grid grid-cols-2 items-center relative bottom-24 lg:bottom-72 z-10">
+          <div className="h-[150vh] bg-[url('/src/images/bg/BGBotchat.svg')] bg-no-repeat bg-cover bg-top w-[100%] flex flex-col lg:grid grid-cols-2 items-center relative bottom-24 lg:bottom-72 z-10">
             <img src={ContactUs} alt="Holding Hands" className="mb-12 mt-36 ml-0 lg:ml-24 w-[70vw] lg:w-auto" />
             <div className="flex flex-col px-[10%] items-center lg:pr-24 text-right mb-36 lg:mb-12 lg:items-end">
               <h1 className="text-white text-5xl mb-3 text-center lg:text-right">Bergabung <br /> Bersama Mealth</h1>
@@ -50,6 +54,16 @@ const HomePage = () => {
               <a href="https://line.me/ti/g2/RtRB7pV9-TXcRsvuu2z-QqxGtQM4DtkCXa1r6w?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" className="my-1 w-full lg:w-3/5"><Button className="bg-green w-full hover:bg-orange">JOIN US AT LINE</Button></a>
               <a href="https://bit.ly/MealthGroupCommunity" className="my-1 w-full lg:w-3/5"><Button className="bg-green w-full hover:bg-orange">JOIN US AT WHATSAPP</Button></a>
             </div>
+          </div>
+          <div className="flex flex-col lg:grid lg:grid-cols-3 lg:grid-rows-6 items-center h-[100vh] w-[100%] mt-24 pb-12 px-[10%] lg:px-12 relative bottom-72 z-10 -mb-[20vh]">
+            {/* LEFT */}
+            <div className="flex flex-col text-center lg:text-left items-center lg:items-start px-[10%] lg:pl-24 col-start-1 row-start-1 row-span-6 mt-12">
+              <h1 className="text-6xl mb-3">Melly Chatbot</h1>
+              <img src={MascotQuestion} className="w-full" />
+              <p>Tanyakan masalah yang sedang kamu alami dengan Bot Melly!</p>
+            </div>
+            {/* RIGHT */}
+            <ChatBot />
           </div>
 
           
