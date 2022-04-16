@@ -89,8 +89,9 @@ const ChatBot = () => {
                 // you can get user input from `document.getElementById("input").value`
                 setChats([...chats, 
                   <MeddyChat>{document.getElementById("input").value}</MeddyChat>,
-                  <MellyChat>{(chatDataJSON[changeID(document.getElementById("input").value)+1].text).replace(/["]+/g, '')}</MellyChat>,
+                  <MellyChat>{chatDataJSON[changeID(document.getElementById("input").value)+1].text}</MellyChat>,
                 ]);
+                console.log(chatDataJSON[idChat+1].text);
                 setIdChat(changeID(document.getElementById("input").value));
                 document.getElementById("input").value = ""; // reset input area to blank
               }} 
