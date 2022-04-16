@@ -13,6 +13,6 @@ export const getChat = (chatId) => {
       console.log(chat);
     });
   }, [chatId]);
-
+  console.log(chat);
   return chat;
 };
