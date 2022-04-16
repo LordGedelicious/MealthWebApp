@@ -84,8 +84,8 @@ const Konsultasi = () => {
             <Button
               className="bg-green hover:bg-spurple hover:font-normal w-36"
               onClick={(e) => {
-                setLocation("/payment/CallConsultation");
-                openFormInNewTab();
+                setLocation("/Konsultasi");
+                // openFormInNewTab();
               }}
             >
               Book Now
@@ -106,8 +106,8 @@ const Konsultasi = () => {
             <Button
               className="bg-green hover:bg-spurple hover:font-normal w-36"
               onClick={(e) => {
-                setLocation("/payment/VideoConferenceConsultation");
-                openFormInNewTab();
+                setLocation("/Konsultasi");
+                // openFormInNewTab();
               }}
             >
               Book Now
@@ -136,8 +136,8 @@ const Konsultasi = () => {
                 <Button
                   className="bg-green hover:bg-spurple hover:font-normal w-36"
                   onClick={(e) => {
-                    setLocation("/payment/NyamanCallConsultation");
-                    openFormInNewTab();
+                    setLocation("/Konsultasi");
+                    // openFormInNewTab();
                   }}
                 >
                   Book Now
@@ -155,8 +155,8 @@ const Konsultasi = () => {
                 <Button
                   className="bg-green hover:bg-spurple hover:font-normal w-36"
                   onClick={(e) => {
-                    setLocation("/payment/NyamanVidConsultation");
-                    openFormInNewTab();
+                    setLocation("/Konsultasi");
+                    // openFormInNewTab();
                   }}
                 >
                   Book Now
@@ -188,8 +188,8 @@ const Konsultasi = () => {
                 <Button
                   className="bg-green hover:bg-spurple hover:font-normal w-36"
                   onClick={(e) => {
-                    setLocation("/payment/BahagiaCallConsultation");
-                    openFormInNewTab();
+                    setLocation("/Konsultasi");
+                    // openFormInNewTab();
                   }}
                 >
                   Book Now
@@ -207,8 +207,8 @@ const Konsultasi = () => {
                 <Button
                   className="bg-green hover:bg-spurple hover:font-normal w-36 "
                   onClick={(e) => {
-                    setLocation("/payment/BahagiaVidConsultation");
-                    openFormInNewTab();
+                    setLocation("/Konsultasi");
+                    // openFormInNewTab();
                   }}
                 >
                   Book Now

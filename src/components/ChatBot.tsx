@@ -24,8 +24,6 @@ const MeddyChat: FC<Props> = ({children}) => {
 
 
 const ChatBot = () => { 
-  const dummy = useRef();
-
   const chatDataJSON = chatData[0].chatbotid;
   const [idChat, setIdChat] = useState(-1);
 
@@ -39,32 +37,20 @@ const ChatBot = () => {
   };
 
   function changeID(userinput) {
-    console.log(idChat);
-    console.log(userinput);
-
-    console.log(chats);
 
     if (userinput == chatDataJSON[idChat+1].query1 && chatDataJSON[idChat+1].query1 != "") {
-      console.log("TC 1");
-      console.log(chatDataJSON[idChat+1].refer1)
       return (chatDataJSON[idChat+1].refer1);
     } else if (userinput == chatDataJSON[idChat+1].query2 && chatDataJSON[idChat+1].query2 != "") {
-      console.log("TC 2");
       return (chatDataJSON[idChat+1].refer2);
     } else if (userinput == chatDataJSON[idChat+1].query3 && chatDataJSON[idChat+1].query3 != "") {
-      console.log("TC 3");
       return (chatDataJSON[idChat+1].refer3);
     } else if (userinput == chatDataJSON[idChat+1].query4 && chatDataJSON[idChat+1].query4 != "") {
-      console.log("TC 4");
       return (chatDataJSON[idChat+1].refer4);
     } else if (userinput == chatDataJSON[idChat+1].query5 && chatDataJSON[idChat+1].query5 != "") {
-      console.log("TC 5");
       return (chatDataJSON[idChat+1].refer5);
     } else if (userinput == chatDataJSON[idChat+1].query6 && chatDataJSON[idChat+1].query6 != "") {
-      console.log("TC 6");
       return (chatDataJSON[idChat+1].refer6);
     } else {
-      console.log("TC else");
       return (-1);
     }
 
@@ -85,13 +71,10 @@ const ChatBot = () => {
               onClick={(e) => {
                 e.stopPropagation();
                 e.preventDefault();
-                // TODO: masukin data
-                // you can get user input from `document.getElementById("input").value`
                 setChats([...chats, 
                   <MeddyChat>{document.getElementById("input").value}</MeddyChat>,
                   <MellyChat>{chatDataJSON[changeID(document.getElementById("input").value)+1].text}</MellyChat>,
                 ]);
-                console.log(chatDataJSON[idChat+1].text);
                 setIdChat(changeID(document.getElementById("input").value));
                 document.getElementById("input").value = ""; // reset input area to blank
               }} 

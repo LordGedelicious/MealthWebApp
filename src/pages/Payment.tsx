@@ -111,7 +111,9 @@ const Payment = () => {
             <div className="text-xl">
               {/* selain total payment */}
               {voucher === "" ? (
-                <div className="">Tidak Menggunakan Voucher</div>
+                <div className="flex justify-between my-[1rem]">
+                  <div className="">Tidak Menggunakan Voucher</div>
+                </div>
               ) : isVoucherValid ? (
                 <div className="flex justify-between my-[1rem]">
                   <div>{voucher} </div>
@@ -147,7 +149,7 @@ const Payment = () => {
       </div>
       {/* button */}
       <div className="justify-center text-center mt-[2rem] md:mt-[5rem] mb-[2rem]">
-        <a href="/">
+        <a href="/ChatConsultation">
           <Button className="bg-orange w-full hover:bg-spurple my-1 max-w-[20%] ">Pay {"&"} Confirm</Button>
         </a>
       </div>

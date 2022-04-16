@@ -7,6 +7,7 @@ import About from "../pages/AboutUs";
 import Konsultasi from "../pages/Konsultasi";
 import Events from "../pages/EventsPage";
 import Payment from "../pages/Payment";
+import ChatConsultation from "../pages/ChatConsultation";
 import Testing from "../pages/Testing";
 
 export type route = {
@@ -40,6 +41,8 @@ export const KONSULTASI_PAGE = toRoute("Konsultasi", "/Konsultasi", Konsultasi);
 
 export const EVENTS_PAGE = toRoute("Events", "/Events", Events);
 
+export const CHATCONSULTATION_PAGE = toRoute("Chat Consultation", "/ChatConsultation", ChatConsultation);
+
 export const PAYMENT_PAGE = toRoute("Payment", "/Payment/:consultationType", Payment);
 export const TESTING_PAGE = toRoute("Testing", "/Testing", Testing);
 
@@ -63,4 +66,4 @@ export const NOTFOUND_PAGE = toRoute("Not Found", "/:rest*", NotFound);
   },
 ];*/
 
-export const AllRoutes = [HOME_PAGE, PRIVACYPOLICY_PAGE, TERMSANDCONDITIONS_PAGE, ABOUTUS_PAGE, KONSULTASI_PAGE, EVENTS_PAGE, , TESTING_PAGE, PAYMENT_PAGE, NOTFOUND_PAGE];
+export const AllRoutes = [HOME_PAGE, PRIVACYPOLICY_PAGE, TERMSANDCONDITIONS_PAGE, ABOUTUS_PAGE, KONSULTASI_PAGE, EVENTS_PAGE, , TESTING_PAGE, CHATCONSULTATION_PAGE, PAYMENT_PAGE, NOTFOUND_PAGE];
