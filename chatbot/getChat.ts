@@ -1,17 +1,16 @@
-import { getDatabase, ref, onValue, get, child } from "firebase/database";
+import { getDatabase, ref, onValue } from "firebase/database";
 import { useEffect, useState } from "react";
-import db from "../firebase";
+import firebase from "../firebase";
+firebase;
 export const getChat = (chatId) => {
   const [chat, setChat] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
-
-  const chatbotidRef = ref(db, `chatbotid/${chatId + 1}`);
-
+  const db = getDatabase();
+  const chatbotidRef = ref(db, "chatbotid/" + (chatId + 1));
   useEffect(() => {
     onValue(chatbotidRef, (snapshot) => {
       setChat(snapshot.val());
-      setIsLoading(false);
-      console.log("chat", chat);
+
+      console.log(chat);
     });
   }, [chatId]);
   console.log(chat);
