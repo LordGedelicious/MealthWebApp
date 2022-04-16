@@ -1,3 +1,12 @@
+import Mid from "../images/konsultasi/mid_thin.svg";
+
+import Sad from "../images/mood/sad.svg";
+import Neutral from "../images/mood/neutral.svg";
+import Happy from "../images/mood/happy.svg";
+import HighAf from "../images/mood/highaf.svg";
+
+
+
 import { FC, useState, ChangeEvent, useRef } from "react";
 
 type Props = {
@@ -32,9 +41,16 @@ return (
           
             {/* LEFT */}
             <div className="flex flex-col text-center lg:text-left items-center lg:items-start px-[10%] lg:pl-24 col-start-1 row-start-1 row-span-6 mt-12">
+              <img src={Mid} className="w-full" />
               <h1 className="text-6xl mb-3">Chat Consultation</h1>
-              {/* <img src={MascotQuestion} className="w-full" /> */}
               <p>Diskusikan langsung permasalahan Meddies dengan psikolog dan nutritionist.</p>
+              <h2 className="text-2xl mb-3 text-center">Berikan penilaian untuk mengakhiri konsultasi!</h2>
+              <div className="grid grid-cols-4">
+                <div><a href="/"><img src={Sad} className="w-full" /></a></div>
+                <div><a href="/"><img src={Neutral} className="w-full" /></a></div>
+                <div><a href="/"><img src={Happy} className="w-full" /></a></div>
+                <div><a href="/"><img src={HighAf} className="w-full" /></a></div>
+              </div>
             </div>
             {/* RIGHT */}
             <div className="flex flex-col row-span-6 col-span-2 rounded-3xl bg-white shadow-md p-6 my-3 border-8 border-blue">
