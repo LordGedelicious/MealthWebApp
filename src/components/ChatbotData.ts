@@ -203,7 +203,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "Klik link dibawah ini ya!\\n1. Join Community Mealth https://bit.ly/MealthGroupCommunity. \\nInstagram Mealth https://www.instagram.com/mealth_id/. \\nKonsultasi dengan psikolog ? link ke page consultation"
+            "text": "Klik link dibawah ini ya!\n1. Join Community Mealth https://bit.ly/MealthGroupCommunity. \nInstagram Mealth https://www.instagram.com/mealth_id/. \nKonsultasi dengan psikolog ? link ke page consultation"
           },
           {
             "id": 11,
@@ -237,7 +237,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "It's okay Meddy, wajar banget kok untuk merasakan sedih, just take your time! Kadang rasa sedih juga bisa membuat diri kita belajar sesuatu yang baru. Percaya aja, apa pun yang lagi dilalui, semua pasti ada jalan keluarnya! \\n\\nJust friendly reminder dari Melly, kalau hidup itu gak akan selalu sempurna. Kadang hidup ga berjalan sesuai dengan rencana kita. Tapi, kita bisa belajar untuk bahagia dengan cara mensyukuri yang ada \\n\\nDan Melly berharap dan percaya kalau masa-masa berat di hidupmu akan segera berlalu. Meskipun terasa panjang, nikmatin prosesnya, kamu pasti bisa kok. Karena kalau dipikir-pikir, segala sesuatu pasti ada akhirnya! Semangat Meddy, sending virtual hugs!"
+            "text": "It's okay Meddy, wajar banget kok untuk merasakan sedih, just take your time! Kadang rasa sedih juga bisa membuat diri kita belajar sesuatu yang baru. Percaya aja, apa pun yang lagi dilalui, semua pasti ada jalan keluarnya! \n\nJust friendly reminder dari Melly, kalau hidup itu gak akan selalu sempurna. Kadang hidup ga berjalan sesuai dengan rencana kita. Tapi, kita bisa belajar untuk bahagia dengan cara mensyukuri yang ada \n\nDan Melly berharap dan percaya kalau masa-masa berat di hidupmu akan segera berlalu. Meskipun terasa panjang, nikmatin prosesnya, kamu pasti bisa kok. Karena kalau dipikir-pikir, segala sesuatu pasti ada akhirnya! Semangat Meddy, sending virtual hugs!"
           },
           {
             "id": 13,
@@ -254,7 +254,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "Hi Meddy, untuk merasakan sedih, merasa kurang, tidak bisa melakukan sesuatu dengan benar, itu normal kok. Tapi merasa insecure berkepanjangan ga baik loh karena secara nggak sadar, itu bisa mempengaruhi performa bahkan kesehatan kamu. \\n\\nTerlebih lagi, kamu ga bisa membandingkan diri kamu sama orang lain, Meddy. Kamu cuma layak membandingkan dengan diri kamu yang sebelumnya. Ingat, kamu berharga! Dan seharusnya kamu bangga sama semua yang pernah kamu lalui dan kamu capai."
+            "text": "Hi Meddy, untuk merasakan sedih, merasa kurang, tidak bisa melakukan sesuatu dengan benar, itu normal kok. Tapi merasa insecure berkepanjangan ga baik loh karena secara nggak sadar, itu bisa mempengaruhi performa bahkan kesehatan kamu. \n\nTerlebih lagi, kamu ga bisa membandingkan diri kamu sama orang lain, Meddy. Kamu cuma layak membandingkan dengan diri kamu yang sebelumnya. Ingat, kamu berharga! Dan seharusnya kamu bangga sama semua yang pernah kamu lalui dan kamu capai."
           },
           {
             "id": 14,
@@ -271,7 +271,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "Self acceptance itu adalah ketika tidak lagi membandingkan diri dengan orang lain. Coba mulai dengan mengenali diri sendiri, kasih waktu untuk diri kamu. Coba berbagai aktivitas, cari tau apa yang kamu suka, apa kelebihan kamu, dan fokuslah sama kelebihan itu. \\n\\n Tapi menerima diri tidak berhenti sampai situ, tapi berusaha untuk menjadi the best version of you. Self acceptance berarti untuk terus mengembangakan diri menjadi yang lebih baik. Dan tentunya untuk bangga dan mengekspresikan diri kamu!"
+            "text": "Self acceptance itu adalah ketika tidak lagi membandingkan diri dengan orang lain. Coba mulai dengan mengenali diri sendiri, kasih waktu untuk diri kamu. Coba berbagai aktivitas, cari tau apa yang kamu suka, apa kelebihan kamu, dan fokuslah sama kelebihan itu. \n\n Tapi menerima diri tidak berhenti sampai situ, tapi berusaha untuk menjadi the best version of you. Self acceptance berarti untuk terus mengembangakan diri menjadi yang lebih baik. Dan tentunya untuk bangga dan mengekspresikan diri kamu!"
           },
           {
             "id": 15,
@@ -288,7 +288,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "Kamu harus bisa menerima kekurangan yang kamu punya dan menyadari kelebihan yang kamu miliki. Dengan menerima semua yang kamu miliki, kamu akan sadar bahwa akhirnya setiap orang di dunia ini dilahirkan berbeda Meddy! \\n\\nBahwa kamu nggak bisa membandingkan dirimu dengan orang lain. Pada akhirnya, kita dilahirkan dengan tujuan yang tentu berbeda di muka bumi ini. Jadi, belajar berdamai, menerima, dan bersyukur sama dirimu sendiri. Cobalah menyadari, akan betapa berharganya dirimu, Meddy!"
+            "text": "Kamu harus bisa menerima kekurangan yang kamu punya dan menyadari kelebihan yang kamu miliki. Dengan menerima semua yang kamu miliki, kamu akan sadar bahwa akhirnya setiap orang di dunia ini dilahirkan berbeda Meddy! \n\nBahwa kamu nggak bisa membandingkan dirimu dengan orang lain. Pada akhirnya, kita dilahirkan dengan tujuan yang tentu berbeda di muka bumi ini. Jadi, belajar berdamai, menerima, dan bersyukur sama dirimu sendiri. Cobalah menyadari, akan betapa berharganya dirimu, Meddy!"
           },
           {
             "id": 16,
@@ -305,7 +305,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "Body Image atau citra tubuh adalah kombinasi dari pikiran dan perasaan yang dimiliki terhadap tubuh kita. Body image setiap orang itu bisa berbeda baik positif, negatif, maupun kombinasi keduanya. Namun, memang penting dan disarankan untuk bisa memiliki positive body image, Meddy.  \\n\\nBody image dapat dipengaruhi oleh faktor internal (misalnya kepribadian) dan eksternal (misalnya lingkungan sosial)."
+            "text": "Body Image atau citra tubuh adalah kombinasi dari pikiran dan perasaan yang dimiliki terhadap tubuh kita. Body image setiap orang itu bisa berbeda baik positif, negatif, maupun kombinasi keduanya. Namun, memang penting dan disarankan untuk bisa memiliki positive body image, Meddy.  \n\nBody image dapat dipengaruhi oleh faktor internal (misalnya kepribadian) dan eksternal (misalnya lingkungan sosial)."
           },
           {
             "id": 17,
@@ -322,7 +322,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "Positive body image adalah ketika kamu bisa menerima, mengapresiasi, dan menghormati tubuhmu sendiri. Berbeda dengan Body Satisfaction, ketika kamu tidak sepenuhnya puas terhadap tubuhmu tetapi masih dapat menerimanya. \\n\\nPositive Body Image berkaitan dengan penerimaan diri, kepercayaan diri, dan memiliki perilaku sehari-hari yang sehat yang ditunjukkan dengan memiliki praktik makan dan olahraga yang sesuai dengan kebutuhan."
+            "text": "Positive body image adalah ketika kamu bisa menerima, mengapresiasi, dan menghormati tubuhmu sendiri. Berbeda dengan Body Satisfaction, ketika kamu tidak sepenuhnya puas terhadap tubuhmu tetapi masih dapat menerimanya. \n\nPositive Body Image berkaitan dengan penerimaan diri, kepercayaan diri, dan memiliki perilaku sehari-hari yang sehat yang ditunjukkan dengan memiliki praktik makan dan olahraga yang sesuai dengan kebutuhan."
           },
           {
             "id": 18,
@@ -339,7 +339,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "1. Fokus pada kualitas, kemampuan, dan talentamu \\n2. Hindari negative self-talk. Berikan apresiasi dan hargai dirimu sendiri! \\n3. Fokus pada kesehatan bukan pada angka di timbangan. \\n4. Unfollow orang-orang yang memicu pikiran negatif terhadap dirimu sendiri."
+            "text": "1. Fokus pada kualitas, kemampuan, dan talentamu \n2. Hindari negative self-talk. Berikan apresiasi dan hargai dirimu sendiri! \n3. Fokus pada kesehatan bukan pada angka di timbangan. \n4. Unfollow orang-orang yang memicu pikiran negatif terhadap dirimu sendiri."
           },
           {
             "id": 19,
@@ -475,7 +475,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "Mealth punya beberapa event seru lho yang bisa kamu ikuti! Mulai dari :\\n1. Menambah insight dan pengetahuanmu dengan ikut Webinar berisi materi-materi insightful!\\n2. Ngobrol dan diskusi santai di Talkshow bersama para ahli di bidangnya!\\n3. Curahkan isi hatimu dan masalah yang kamu alami di Mealthouse!\\n4. Ikuti Challenge dari Mealth untuk dapatkan hadiah setiap bulannya!"
+            "text": "Mealth punya beberapa event seru lho yang bisa kamu ikuti! Mulai dari :\n1. Menambah insight dan pengetahuanmu dengan ikut Webinar berisi materi-materi insightful!\n2. Ngobrol dan diskusi santai di Talkshow bersama para ahli di bidangnya!\n3. Curahkan isi hatimu dan masalah yang kamu alami di Mealthouse!\n4. Ikuti Challenge dari Mealth untuk dapatkan hadiah setiap bulannya!"
           },
           {
             "id": 27,
@@ -509,7 +509,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "Di dalam komunitas nanti, Meddy dapat berinteraksi, bertukar kabar, menanggapi cerita teman-teman, dan turut serta memberikan support satu sama lain dalam kondisi apapun.\\nOiya, perlu diingat untuk tidak memberikan apresiasi kepada anggota Mealth yang mengalami penurunan badan namun dengan pola diet yang tidak baik. Karena di Mealth yang terpenting bukan siapa yang paling cepat dan banyak menaikkan atau menurunkan berat badan. Disini, kita sama-sama membangun mental dan mindset yang baik dalam menerima diri kita agar terhindar dari kebiasaan buruk."
+            "text": "Di dalam komunitas nanti, Meddy dapat berinteraksi, bertukar kabar, menanggapi cerita teman-teman, dan turut serta memberikan support satu sama lain dalam kondisi apapun.\nOiya, perlu diingat untuk tidak memberikan apresiasi kepada anggota Mealth yang mengalami penurunan badan namun dengan pola diet yang tidak baik. Karena di Mealth yang terpenting bukan siapa yang paling cepat dan banyak menaikkan atau menurunkan berat badan. Disini, kita sama-sama membangun mental dan mindset yang baik dalam menerima diri kita agar terhindar dari kebiasaan buruk."
           },
           {
             "id": 29,
@@ -577,7 +577,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "Ternyata kebiasaan makan kamu tuh juga dipengaruhi oleh faktor genetik! Apa aja?\\n1. Sistem Metabolisme. Biasanya, Meddy yang makan banyak, tapi tetap kurus, atau makan sedikit jadi mudah naik beratnya, karena sistem metabolisme ini. Meskipun ini genetik, tapi tetep bisa kok diatur dengan olahraga.\\n2. Selera Makan. Nah, kalo selera makan ini terjadi karena perbedaan genetik seperti kepadatan papila rasa, sensitivitas reseptor rasa, hingga konstituen air liur."
+            "text": "Ternyata kebiasaan makan kamu tuh juga dipengaruhi oleh faktor genetik! Apa aja?\n1. Sistem Metabolisme. Biasanya, Meddy yang makan banyak, tapi tetap kurus, atau makan sedikit jadi mudah naik beratnya, karena sistem metabolisme ini. Meskipun ini genetik, tapi tetep bisa kok diatur dengan olahraga.\n2. Selera Makan. Nah, kalo selera makan ini terjadi karena perbedaan genetik seperti kepadatan papila rasa, sensitivitas reseptor rasa, hingga konstituen air liur."
           },
           {
             "id": 33,
@@ -594,7 +594,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "Pola makan sehat itu bukan berarti makan dengan kalori tertentu, tetapi makan dengan bijak. Untuk tidak merasa bersalah ketika makan yang manis, yang berkalori tinggi, karena tubuh kamu sebenarnya butuh itu semua! Tapi harus diingat untuk bisa mengontrol diri ketika makan dan memastikan asupan makanan kamu seimbang. \\n\\nPola makan yang sehat juga berarti memiliki hubungan yang baik dengan makanan. Tidak merasa bersalah atau takut ketika makan. Karena ingat, pada akhirnya kamu butuh makan, Meddy!"
+            "text": "Pola makan sehat itu bukan berarti makan dengan kalori tertentu, tetapi makan dengan bijak. Untuk tidak merasa bersalah ketika makan yang manis, yang berkalori tinggi, karena tubuh kamu sebenarnya butuh itu semua! Tapi harus diingat untuk bisa mengontrol diri ketika makan dan memastikan asupan makanan kamu seimbang. \n\nPola makan yang sehat juga berarti memiliki hubungan yang baik dengan makanan. Tidak merasa bersalah atau takut ketika makan. Karena ingat, pada akhirnya kamu butuh makan, Meddy!"
           },
           {
             "id": 34,
@@ -611,7 +611,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "1. Bisa menikmati makanan dengan porsi yang bijak.\\n2. Tidak melabeli satu makanan itu sehat atau tidak sehat karena pada dasarnya semua makanan itu baik asalkan memerhatikan cara pengolahan, waktu makan, dan porsi makan.\\n3. Peka sama sinyal yang dikasih tubuh, baik itu kesehatan fisik maupun mental. Kalau dirasa ada yang tidak baik, sekecil apapun, coba evaluasi kebiasaan kamu."
+            "text": "1. Bisa menikmati makanan dengan porsi yang bijak.\n2. Tidak melabeli satu makanan itu sehat atau tidak sehat karena pada dasarnya semua makanan itu baik asalkan memerhatikan cara pengolahan, waktu makan, dan porsi makan.\n3. Peka sama sinyal yang dikasih tubuh, baik itu kesehatan fisik maupun mental. Kalau dirasa ada yang tidak baik, sekecil apapun, coba evaluasi kebiasaan kamu."
           },
           {
             "id": 35,
@@ -645,7 +645,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "Eating Disorder adalah serangkaian kondisi psikologis yang menyebabkan berkembangnya kebiasaan makan yang tidak sehat. Biasanya diawali dengan terobsesi pada makanan, berat badan, atau bentuk tubuh. Hal ini dapat berdampak negatif bagi kesehatan fisik dan mental seseorang. Perlu diingat bahwa eating disorder bukan hal yang sederhana, harus di diagnosis dan diberi penanganan yang tepat oleh ahlinya! \\n\\nBerdasarkan data di tahun 2019, ada sekitar 400.000 orang Indonesia yang mengalami eating disorder. Sayangnya, masih banyak masyarakat Indonesia yang masih menganggap hal ini tabu, bahkan banyak yang tidak tau tentang isu ini. Padahal bisa jadi ada orang-orang di sekitarmu yang juga mengalami eating disorder. Yuk sama-sama tingkatkan kesadaran dan bantu mereka yang sedang mengalami eating disorder dengan Mealth."
+            "text": "Eating Disorder adalah serangkaian kondisi psikologis yang menyebabkan berkembangnya kebiasaan makan yang tidak sehat. Biasanya diawali dengan terobsesi pada makanan, berat badan, atau bentuk tubuh. Hal ini dapat berdampak negatif bagi kesehatan fisik dan mental seseorang. Perlu diingat bahwa eating disorder bukan hal yang sederhana, harus di diagnosis dan diberi penanganan yang tepat oleh ahlinya! \n\nBerdasarkan data di tahun 2019, ada sekitar 400.000 orang Indonesia yang mengalami eating disorder. Sayangnya, masih banyak masyarakat Indonesia yang masih menganggap hal ini tabu, bahkan banyak yang tidak tau tentang isu ini. Padahal bisa jadi ada orang-orang di sekitarmu yang juga mengalami eating disorder. Yuk sama-sama tingkatkan kesadaran dan bantu mereka yang sedang mengalami eating disorder dengan Mealth."
           },
           {
             "id": 37,
@@ -662,7 +662,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "Eating Disorder tuh ada banyak jenisnya loh, Meddy!  Mulai dari bulimia nervosa (makan dalam jumlah banyak lalu dimuntahkan dengan sengaja) , anorexia nervosa (penurunan berat badan secara ekstrim yang diikuti rasa takut untuk makan), binge eating disorder (makan dalam jumlah besar secara berulang), PICA (kebiasaan mengonsumsi benda bukan makanan), rumination (memuntahkan makanan lalu dimakan kembali, lalu memuntahkan dan memakannya kembali), dan masih banyak lagi. \\n\\nPerlu diingat yah Meddy bahwa kamu tidak bisa mendiagnosis diri kamu sendiri. Harus ahli yang bisa mendiagnosis apakah kamu memiliki eating disorder atau tidak karena eating disorder adalah keadaan yang kompleks.  Jangan sampai kamu self-diagnose karena tidak baik buat diri kamu sendiri, Meddy! Dan ga ada salahnya kok mencari bantuan langsung kepada mereka yang benar-benar mengerti, seperti psikolog, psikiater, ahli gizi, ataupun dokter."
+            "text": "Eating Disorder tuh ada banyak jenisnya loh, Meddy!  Mulai dari bulimia nervosa (makan dalam jumlah banyak lalu dimuntahkan dengan sengaja) , anorexia nervosa (penurunan berat badan secara ekstrim yang diikuti rasa takut untuk makan), binge eating disorder (makan dalam jumlah besar secara berulang), PICA (kebiasaan mengonsumsi benda bukan makanan), rumination (memuntahkan makanan lalu dimakan kembali, lalu memuntahkan dan memakannya kembali), dan masih banyak lagi. \n\nPerlu diingat yah Meddy bahwa kamu tidak bisa mendiagnosis diri kamu sendiri. Harus ahli yang bisa mendiagnosis apakah kamu memiliki eating disorder atau tidak karena eating disorder adalah keadaan yang kompleks.  Jangan sampai kamu self-diagnose karena tidak baik buat diri kamu sendiri, Meddy! Dan ga ada salahnya kok mencari bantuan langsung kepada mereka yang benar-benar mengerti, seperti psikolog, psikiater, ahli gizi, ataupun dokter."
           },
           {
             "id": 38,
@@ -713,7 +713,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "Gado-gado\\nBagi Meddy yang mau makan siang yang ringan dan sehat, gado-gado adalah jawabannya. Paduan kentang dengan beragam sayuran segar dan bumbu kacang sangat cocok untuk di siang hari.\\n\\nAglio Olio\\nUntuk Meddy yang mau masak anti ribet, aglio olio dapat menjadi jawabannya. Khasnya rasa bawang ditambah dengan irisan daging asap, cocok di makan di siang hari.\\n\\nNasi Padang\\nNasi padang dengan porsinya yang besar dan bumbunya yang khas, dapat menjadi pilihan ketika Meddy butuh makan berat di siang hari."
+            "text": "Gado-gado\nBagi Meddy yang mau makan siang yang ringan dan sehat, gado-gado adalah jawabannya. Paduan kentang dengan beragam sayuran segar dan bumbu kacang sangat cocok untuk di siang hari.\n\nAglio Olio\nUntuk Meddy yang mau masak anti ribet, aglio olio dapat menjadi jawabannya. Khasnya rasa bawang ditambah dengan irisan daging asap, cocok di makan di siang hari.\n\nNasi Padang\nNasi padang dengan porsinya yang besar dan bumbunya yang khas, dapat menjadi pilihan ketika Meddy butuh makan berat di siang hari."
           },
           {
             "id": 41,
@@ -730,7 +730,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "Spring Roll Vietnam\\nNah, Meddy juga bisa cobain nih fresh spring roll, perpaduan sayuran segar, udang, dan bihun, dibalut dengan rice wrapper ditambah dengan saus kacang yang lezat, fix Meddy pasti suka banget.\\n\\nSalad Buah\\nSalad Buah adalah makanan yang sehat dan segar. Selain itu, salad buah memiliki banyak vitamin. Maka dari itu, makanan ini sangat cocok untukmu.\\n\\nOat Snack\\nUntuk Meddy yang mau snack rendah kalori, bisa cobain Oat Snack nih. Selain itu, Oat Snack dapat memberikan rasa kenyang untuk Meddy."
+            "text": "Spring Roll Vietnam\nNah, Meddy juga bisa cobain nih fresh spring roll, perpaduan sayuran segar, udang, dan bihun, dibalut dengan rice wrapper ditambah dengan saus kacang yang lezat, fix Meddy pasti suka banget.\n\nSalad Buah\nSalad Buah adalah makanan yang sehat dan segar. Selain itu, salad buah memiliki banyak vitamin. Maka dari itu, makanan ini sangat cocok untukmu.\n\nOat Snack\nUntuk Meddy yang mau snack rendah kalori, bisa cobain Oat Snack nih. Selain itu, Oat Snack dapat memberikan rasa kenyang untuk Meddy."
           },
           {
             "id": 42,
@@ -747,7 +747,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "Sirloin Steak\\nBagi Meddy pecinta daging sapi, sirloin steak dapat menjadi salah satu menu makan malam yang tepat. Selain itu, Meddy dapat menambahkan sayuran buncis atau olahan kentang sebagai karbohidrat.\\n\\nSate\\nSate merupakan salah satu opsi terbaik untuk makan malam nih. Meddy bisa pilih jenis sate dan jenis bumbunya sesuai dengan preferensi Meddy!\\n\\nTom Yam\\nTom Yam cocok banget nih bagi Meddy yang suka makanan-makanan khas Thailand. Rasanya yang sedikit asam ditambah dengan sayuran dan beberapa jenis olahan laut pas banget untuk nemenin makan malam Meddy!"
+            "text": "Sirloin Steak\nBagi Meddy pecinta daging sapi, sirloin steak dapat menjadi salah satu menu makan malam yang tepat. Selain itu, Meddy dapat menambahkan sayuran buncis atau olahan kentang sebagai karbohidrat.\n\nSate\nSate merupakan salah satu opsi terbaik untuk makan malam nih. Meddy bisa pilih jenis sate dan jenis bumbunya sesuai dengan preferensi Meddy!\n\nTom Yam\nTom Yam cocok banget nih bagi Meddy yang suka makanan-makanan khas Thailand. Rasanya yang sedikit asam ditambah dengan sayuran dan beberapa jenis olahan laut pas banget untuk nemenin makan malam Meddy!"
           },
           {
             "id": 43,
@@ -764,7 +764,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "Dalam diet, kita harus memiliki mindset yang tepat. Hal yang pertama adalah untuk memiliki mindset diet untuk tujuan kesehatan bukan hanya untuk sembarang mengurangi timbangan berat badan. Health is not a look! Dan ingat ya Meddy, badan kurus itu bukan berarti sehat loh.\\n\\nDimulai dengan menghindari pola diet yang ekstrim apalagi sampai membahayakan kesehatan tubuh. Misalnya, pake obat diet karena hasilnya hanya bersifat sementara. Kalau mau hasil yang lebih stabil bagaimana? Cari pola diet yang benar dan yang dapat kamu jalani dengan konsisten. Gaperlu yang ekstrim, yang penting kamu nyaman menjalaninya dan tentunya sudah terbukti sehat dan mana. Setelah kamu mencapai target, tetap konsisten dengan menerapkan lifestyle yang baru supaya diet kamu bukan diet yo-yo alias akan balik lagi ke semula."
+            "text": "Dalam diet, kita harus memiliki mindset yang tepat. Hal yang pertama adalah untuk memiliki mindset diet untuk tujuan kesehatan bukan hanya untuk sembarang mengurangi timbangan berat badan. Health is not a look! Dan ingat ya Meddy, badan kurus itu bukan berarti sehat loh.\n\nDimulai dengan menghindari pola diet yang ekstrim apalagi sampai membahayakan kesehatan tubuh. Misalnya, pake obat diet karena hasilnya hanya bersifat sementara. Kalau mau hasil yang lebih stabil bagaimana? Cari pola diet yang benar dan yang dapat kamu jalani dengan konsisten. Gaperlu yang ekstrim, yang penting kamu nyaman menjalaninya dan tentunya sudah terbukti sehat dan mana. Setelah kamu mencapai target, tetap konsisten dengan menerapkan lifestyle yang baru supaya diet kamu bukan diet yo-yo alias akan balik lagi ke semula."
           },
           {
             "id": 44,
@@ -781,7 +781,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "Saat Meddy ingin menaikkan berat badan, Meddy perlu dalam kondisi kalori surplus. Dimana kalori masuk lebih banyak daripada kalori yang keluar. Begitu juga sebaliknya, saat Meddy ingin menurunkan berat badan. Tapi, Meddy perlu tahu batas minimal kalori masuk berapa dengan kalkulator TDEE https://tdeecalculator.net/ . Tapi ingat jangan sampai berlebihan yah, Meddy! Jangan lupa untuk be mindful!\\n\\nEits! Tapi Meddy gaboleh semata-mata hanya melihat kalori nya saja ya! Meddy juga perlu memperhatikan dari sisi macronutrients nya juga seperti:\\nAsupan protein untuk menjaga nilai massa otot\\nAsupan lemak sehat untuk menyimpan energi dalam tubuh\\nAsupan karbohidrat juga sebagai sumber energi tubuh dalam berkegiatan\\n\\nKalau masih bingung, jangan takut untuk langsung konsultasi dengan ahlinya! Biar memastikan mana yang baik dan benar."
+            "text": "Saat Meddy ingin menaikkan berat badan, Meddy perlu dalam kondisi kalori surplus. Dimana kalori masuk lebih banyak daripada kalori yang keluar. Begitu juga sebaliknya, saat Meddy ingin menurunkan berat badan. Tapi, Meddy perlu tahu batas minimal kalori masuk berapa dengan kalkulator TDEE https://tdeecalculator.net/ . Tapi ingat jangan sampai berlebihan yah, Meddy! Jangan lupa untuk be mindful!\n\nEits! Tapi Meddy gaboleh semata-mata hanya melihat kalori nya saja ya! Meddy juga perlu memperhatikan dari sisi macronutrients nya juga seperti:\nAsupan protein untuk menjaga nilai massa otot\nAsupan lemak sehat untuk menyimpan energi dalam tubuh\nAsupan karbohidrat juga sebagai sumber energi tubuh dalam berkegiatan\n\nKalau masih bingung, jangan takut untuk langsung konsultasi dengan ahlinya! Biar memastikan mana yang baik dan benar."
           },
           {
             "id": 45,
@@ -798,7 +798,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "Selain mengatur pola makan, Meddy juga harus mengatur gaya hidup dengan olahraga yang lebih sering. Baiknya, olahraga sebanyak 150 menit/minggu atau sekitar 30 menit /hari dalam 5 hari seminggu.\\nNamun, jika Meddy merasa itu terlalu berat, boleh kok mulai dengan durasi yang lebih singkat dan perlahan-lahan ditingkatkan. Intinya, harus konsisten!"
+            "text": "Selain mengatur pola makan, Meddy juga harus mengatur gaya hidup dengan olahraga yang lebih sering. Baiknya, olahraga sebanyak 150 menit/minggu atau sekitar 30 menit /hari dalam 5 hari seminggu.\nNamun, jika Meddy merasa itu terlalu berat, boleh kok mulai dengan durasi yang lebih singkat dan perlahan-lahan ditingkatkan. Intinya, harus konsisten!"
           }
         ]
       }

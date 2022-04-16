@@ -1,5 +1,5 @@
 import { getChat } from "../../chatbot/getChat";
-import { FC, useState, ChangeEvent } from "react";
+import { FC, useState, ChangeEvent, useRef } from "react";
 import { chatData } from "./chatbotData";
 
 type Props = {
@@ -24,6 +24,7 @@ const MeddyChat: FC<Props> = ({children}) => {
 
 
 const ChatBot = () => { 
+  const dummy = useRef();
 
   const chatDataJSON = chatData[0].chatbotid;
   const [idChat, setIdChat] = useState(-1);
@@ -61,7 +62,7 @@ const ChatBot = () => {
       return (chatDataJSON[idChat+1].refer5);
     } else if (userinput == chatDataJSON[idChat+1].query6 && chatDataJSON[idChat+1].query6 != "") {
       console.log("TC 6");
-      return (chatDataJSON[currentId+1].refer6);
+      return (chatDataJSON[idChat+1].refer6);
     } else {
       console.log("TC else");
       return (-1);
@@ -86,11 +87,11 @@ const ChatBot = () => {
                 e.preventDefault();
                 // TODO: masukin data
                 // you can get user input from `document.getElementById("input").value`
-                setIdChat(changeID(document.getElementById("input").value));
                 setChats([...chats, 
-                  <MeddyChat>{document.getElementById("input").value}</MeddyChat>, 
-                  <MellyChat>{chatDataJSON[idChat+1].text}</MellyChat>
+                  <MeddyChat>{document.getElementById("input").value}</MeddyChat>,
+                  <MellyChat>{(chatDataJSON[changeID(document.getElementById("input").value)+1].text).replace(/["]+/g, '')}</MellyChat>,
                 ]);
+                setIdChat(changeID(document.getElementById("input").value));
                 document.getElementById("input").value = ""; // reset input area to blank
               }} 
               className="bg-green rounded-lg px-6 py-3 col-shadow-lg hover:bg-spurple transition duration-200 ease-in-out relative z-10">
