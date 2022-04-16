@@ -10,74 +10,7 @@ import ContactUs from "../images/about/mid.svg";
 import Button from "../components/Button";
 
 import MascotQuestion from "../images/mascot-question.png";
-import './chat.css';
 
-function ChatRoom() {
-  const dummy = useRef();
-  // const messagesRef = firestore.collection('messages');
-  // const query = messagesRef.orderBy('createdAt').limit(25);
-
-  // const [messages] = useCollectionData(query, { idField: 'id' });
-
-  const [formValue, setFormValue] = useState('');
-
-
-  const sendMessage = async (e) => {
-    e.preventDefault();
-
-    // const { uid, photoURL } = auth.currentUser;
-
-    // await messagesRef.add({
-    //   text: formValue,
-    //   createdAt: firebase.firestore.FieldValue.serverTimestamp(),
-    //   uid,
-    //   photoURL
-    // })
-
-    // setFormValue('');
-    // dummy.current.scrollIntoView({ behavior: 'smooth' });
-  }
-
-  return (<>
-    <div className="chat-main">
-
-      {/* {messages && messages.map(msg => <ChatMessage key={msg.id} message={msg} />)} */}
-      <div className="message received">
-        <img className="img-chat" src={MascotQuestion} />
-        <p>haha</p>
-      </div>
-
-      <div className="message sent">
-        <img className="img-chat" src={MascotQuestion} />
-        <p>haha</p>
-      </div>
-
-      <span ref={dummy}></span>
-
-    </div>
-
-    <form onSubmit={sendMessage}>
-
-      <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Tuliskan pesan" />
-
-      <button type="submit" className= "bg-green w-full hover:bg-orange my-1 rounded-3xl px-6 py-3 text-center hover:shadow-lg hover:font-bold transition ease-in-out duration-300">Kirim</button>
-    </form>
-  </>)
-}
-
-function ChatMessage(props) {
-  const { text, uid, photoURL } = props.message;
-
-  const messageClass = uid === 2 ? 'sent' : 'received';
-  // const messageClass = uid === auth.currentUser.uid ? 'sent' : 'received';
-
-  return (<>
-    <div className={`message ${messageClass}`}>
-      <img src={photoURL || MascotQuestion} />
-      <p>{text}</p>
-    </div>
-  </>)
-}
 
 const HomePage = () => {
   return (
