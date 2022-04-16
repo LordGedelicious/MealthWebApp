@@ -1,6 +1,6 @@
 import { getChat } from "../../chatbot/getChat";
 import { FC, useState, ChangeEvent, useRef } from "react";
-import { chatData } from "./chatbotData";
+import { chatData } from "./ChatbotData";
 
 type Props = {
   className?: string;
@@ -9,7 +9,7 @@ type Props = {
 const MellyChat: FC<Props> = ({children}) => {
   return (
     <div className="flex flex-wrap bg-sblue p-3 rounded-2xl mr-[30%] lg:mr-[50%] self-start text-left my-1">
-      <p className="w-full">{children}</p>
+      <p className="w-full new-line">{children}</p>
     </div>
   );
 };
@@ -17,7 +17,7 @@ const MellyChat: FC<Props> = ({children}) => {
 const MeddyChat: FC<Props> = ({children}) => {
   return (
     <div className="flex flex-wrap bg-spurple p-3 rounded-2xl ml-[30%] lg:ml-[50%] self-end text-right my-1">
-      <p className="w-full">{children}</p>
+      <p className="w-full new-line">{children}</p>
     </div>
   );
 };
@@ -89,8 +89,9 @@ const ChatBot = () => {
                 // you can get user input from `document.getElementById("input").value`
                 setChats([...chats, 
                   <MeddyChat>{document.getElementById("input").value}</MeddyChat>,
-                  <MellyChat>{(chatDataJSON[changeID(document.getElementById("input").value)+1].text).replace(/["]+/g, '')}</MellyChat>,
+                  <MellyChat>{chatDataJSON[changeID(document.getElementById("input").value)+1].text}</MellyChat>,
                 ]);
+                console.log(chatDataJSON[idChat+1].text);
                 setIdChat(changeID(document.getElementById("input").value));
                 document.getElementById("input").value = ""; // reset input area to blank
               }} 
