@@ -38,7 +38,7 @@ const Payment = () => {
   }
   return (
     <div className="pt-[6rem] align-center min-h-[40rem] m-[1rem]">
-      <h1 className="text-center text-[2rem] md:text-[5rem] mb-[1rem]">payment</h1>
+      <h1 className="text-center text-[2rem] md:text-[5rem] mb-[1rem]">Payment Page</h1>
 
       <div className="flex justify-around flex flex-col md:flex-row">
         {/* left side */}
@@ -106,12 +106,12 @@ const Payment = () => {
         {/* left side */}
         {/* right side */}
         <div className="  min-w-[40%] bg-red text-white min-h-full rounded-xl p-[1rem]">
-          <h1 className="text-center mb-[2rem] ">summary</h1>
+          <h1 className="text-center mb-[2rem] ">Summary</h1>
           <div className="flex flex-col min-h-[70%] justify-between mx-4">
             <div className="text-xl">
               {/* selain total payment */}
               {voucher === "" ? (
-                <div className="">Tidak menggunakan voucher</div>
+                <div className="">Tidak Menggunakan Voucher</div>
               ) : isVoucherValid ? (
                 <div className="flex justify-between my-[1rem]">
                   <div>{voucher} </div>
@@ -119,7 +119,7 @@ const Payment = () => {
                 </div>
               ) : (
                 <div className="flex justify-between my-[1rem]">
-                  <div>ada voucher </div>
+                  <div>Voucher</div>
                   <div>{voucher}</div>
                 </div>
               )}
@@ -128,7 +128,7 @@ const Payment = () => {
                 <div>Rp{consultationList[params.consultationType]}</div>
               </div>
               <div className="flex justify-between my-[1rem]">
-                <div>payment method</div>
+                <div>Payment Method</div>
                 <div>{paymentMethod}</div>
               </div>
               {/* selain total payment */}
