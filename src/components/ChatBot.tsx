@@ -1,6 +1,6 @@
 import { getChat } from "../../chatbot/getChat";
 import { FC, useState, ChangeEvent, useRef } from "react";
-import { chatData } from "./chatbotData";
+import { chatData } from "./ChatbotData";
 
 type Props = {
   className?: string;
