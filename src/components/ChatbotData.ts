@@ -16,7 +16,7 @@ export const chatData = [
             "refer4": 4,
             "refer5": 5,
             "refer6": 0,
-            "text": "Hai Meddy, namaku Melly, apa yang bisa aku bantu hari ini? Meddy bisa mengetikkan pesan-pesan ini supaya aku bisa merespon dengan baik."
+            "text": "Hai Meddy, namaku Melly, apa yang bisa aku bantu hari ini? Meddy bisa mengetikkan pesan-pesan ini supaya aku bisa merespon dengan baik. \n1. Apa Kabar \n2. Self Acceptance \n3. Body Image \n4. Tentang Makanan \n5. Tentang Eating Disorder \n6. Lihat pilihan lain"
           },
           {
             "id": 0,
@@ -33,7 +33,7 @@ export const chatData = [
             "refer4": 9,
             "refer5": 10,
             "refer6": -1,
-            "text": "Hal-hal lain yang bisa Meddy tanyakan ke Melly"
+            "text": "Hal-hal lain yang bisa Meddy tanyakan ke Melly \n1. I'm not okay \n2. Cari tau tentang mealth \n3. Bagaimana cara aku berkontribusi \n4. Fun facts \n5. Mau tau lebih banyak tentang mealth \n6. Kembali ke Halaman Sebelumnya"
           },
           {
             "id": 1,
@@ -50,7 +50,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "Wah, Melly lagi seneng banget nih hari ini! Melly mau tau dong kabar Meddy gimana?"
+            "text": "Wah, Melly lagi seneng banget nih hari ini! Melly mau tau dong kabar Meddy gimana? \n1. Aku lagi bahagia nih \n2. Aku lagi sedih ni"
           },
           {
             "id": 2,
@@ -67,7 +67,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "Hi, apa yang ingin Meddy ketahui tentang Self Acceptance nih?"
+            "text": "Hi, apa yang ingin Meddy ketahui tentang Self Acceptance nih? \n1. Melly, aku Insecure nih \n2. Gimana cara untuk mulai menerima diri sendiri \n3. Gimana ya biar aku ga bandingin diriku sama orang terus"
           },
           {
             "id": 3,
@@ -84,7 +84,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "Hi Meddy! Penting loh untuk tau informasi tentang Body Image untuk lebih mensyukuri diri sendiri! Silahkan ketik dan kirim informasi yang Meddy butuhkan ya"
+            "text": "Hi Meddy! Penting loh untuk tau informasi tentang Body Image untuk lebih mensyukuri diri sendiri! Silahkan ketik dan kirim informasi yang Meddy butuhkan ya \n1. Apa itu body image? \n2. Apa itu positive body image? \n3. Bagaimana cara memiliki positive body image?"
           },
           {
             "id": 4,
@@ -101,7 +101,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "Hi! Meddy ingin tahu apa tentang makanan ni?"
+            "text": "Hi! Meddy ingin tahu apa tentang makanan ni? \n1. Pola makan yang sehat \n2. Rekomendasi Makanan Hari Ini \n3. Tips Diet"
           },
           {
             "id": 5,
@@ -118,7 +118,7 @@ export const chatData = [
             "refer4": 39,
             "refer5": "",
             "refer6": "",
-            "text": "Hi Meddy! Kamu mau nanya apanih ke Melly soal eating disorder?"
+            "text": "Hi Meddy! Kamu mau nanya apanih ke Melly soal eating disorder? \n1. Apa itu eating disorder \n2. Apa saja jenis eating disorder \n3. Kenapa eating disorder bisa terjadi \n4. Apakah aku punya eating disorder"
           },
           {
             "id": 6,
@@ -135,7 +135,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "Hi, Melly cukup sedih dengarnya, mungkin Meddy bisa nih coba cara berikut yang dapat membantu Meddy meringankan beberapa masalah Meddy"
+            "text": "Hi, Melly cukup sedih dengarnya, mungkin Meddy bisa nih coba cara berikut yang dapat membantu Meddy meringankan beberapa masalah Meddy\n1. Cerita ke orang lain \n2. Cerita ke Ahli \n3. Gabung komunitas"
           },
           {
             "id": 7,
@@ -152,7 +152,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "Hai! Banyak info nih tentang Mealth, Meddy mau tau yang mana?"
+            "text": "Hai! Banyak info nih tentang Mealth, Meddy mau tau yang mana?\n1. Mealth itu apa sih \n2. Event Mealth \n3. Komunitas Mealth"
           },
           {
             "id": 8,
@@ -169,7 +169,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "Terimakasih ya, udah mau bantu Melly buat berkontribusi menyelesaikan permasalahan eating disorder ini! Meddy bisa bantu Melly dengan berbagai cara loh, bisa Meddy lihat detailnya di bawah ini"
+            "text": "Terimakasih ya, udah mau bantu Melly buat berkontribusi menyelesaikan permasalahan eating disorder ini! Meddy bisa bantu Melly dengan berbagai cara loh, bisa Meddy lihat detailnya di bawah ini\n1. Bangun lingkungan yang positif \n2. Aktif terlibat dan sebarkan informasi"
           },
           {
             "id": 9,
@@ -186,7 +186,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "Wah, Melly senang karena Meddy rasa ingin tahunya cukup tinggi! Ada beberapa funfact tentang eating disorder nih yang bisa Meddy ketahui!"
+            "text": "Wah, Melly senang karena Meddy rasa ingin tahunya cukup tinggi! Ada beberapa funfact tentang eating disorder nih yang bisa Meddy ketahui!\n1. Fact A \n2. Fact B \n3. Fact C"
           },
           {
             "id": 10,
@@ -203,7 +203,11 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
+<<<<<<< Updated upstream
             "text": "Klik link dibawah ini ya!\n1. Join Community Mealth https://bit.ly/MealthGroupCommunity. \nInstagram Mealth https://www.instagram.com/mealth_id/. \nKonsultasi dengan psikolog ? link ke page consultation"
+=======
+            "text": "Klik link dibawah ini ya!\\n1. Join Community Mealth https://bit.ly/MealthGroupCommunity. \\n2. Instagram Mealth https://www.instagram.com/mealth_id/. \\n3. Konsultasi dengan psikolog? mealth.netlify.app/Konsultasi"
+>>>>>>> Stashed changes
           },
           {
             "id": 11,
@@ -356,7 +360,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "Hi Meddy! Kamu mau tau apa nih soal pola makan?"
+            "text": "Hi Meddy! Kamu mau tau apa nih soal pola makan?\n 1. Pola makan yang sehat itu gimana?\n 2. Mindset pola makan yang benar itu seperti apa?\n 3. Tips pola makan yang sehat"
           },
           {
             "id": 20,
@@ -373,7 +377,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "Hai Meddy, Melly ada beberapa rekomendasi nih untuk kamu, btw kamu mau jenis makanan apa nih?"
+            "text": "Hai Meddy, Melly ada beberapa rekomendasi nih untuk kamu, btw kamu mau jenis makanan apa nih?\n 1. Makan siang\n 2. Snack\n 3. Makan malam"
           },
           {
             "id": 21,
@@ -390,7 +394,7 @@ export const chatData = [
             "refer4": "",
             "refer5": "",
             "refer6": "",
-            "text": "Wah, Melly seneng banget berbagi tips ke Meddy! Apalagi seputar diet."
+            "text": "Wah, Melly seneng banget berbagi tips ke Meddy! Apalagi seputar diet.\n 1. Mindset diet yang benar\n 2. Energi yang seimbang\n 3. Olahraga"
           },
           {
             "id": 22,
