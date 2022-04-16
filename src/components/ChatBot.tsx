@@ -9,7 +9,7 @@ type Props = {
 const MellyChat: FC<Props> = ({children}) => {
   return (
     <div className="flex flex-wrap bg-sblue p-3 rounded-2xl mr-[30%] lg:mr-[50%] self-start text-left my-1">
-      <p className="w-full">{children}</p>
+      <p className="w-full new-line">{children}</p>
     </div>
   );
 };
@@ -17,7 +17,7 @@ const MellyChat: FC<Props> = ({children}) => {
 const MeddyChat: FC<Props> = ({children}) => {
   return (
     <div className="flex flex-wrap bg-spurple p-3 rounded-2xl ml-[30%] lg:ml-[50%] self-end text-right my-1">
-      <p className="w-full">{children}</p>
+      <p className="w-full new-line">{children}</p>
     </div>
   );
 };
