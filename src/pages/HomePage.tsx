@@ -25,7 +25,7 @@ const HomePage = () => {
             <img src={HomeImg} alt="A person sitting" className="col-start-2 row-start-1" />
             <div className="text-center px-[10%] lg:pl-24 col-start-1 row-start-1 lg:text-left mb-12 lg:mb-0">
               <h1 className="text-7xl">Mealth</h1>
-              <h3>Bersama Mealth, mari berdamai dengan diri sendiri</h3>
+              <h3>Bersama Mealth, mari berdamai dengan diri sendiri ya</h3>
             </div>
             
           </div>
