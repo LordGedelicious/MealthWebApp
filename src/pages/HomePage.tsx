@@ -25,7 +25,8 @@ const HomePage = () => {
             <img src={HomeImg} alt="A person sitting" className="col-start-2 row-start-1" />
             <div className="text-center px-[10%] lg:pl-24 col-start-1 row-start-1 lg:text-left mb-12 lg:mb-0">
               <h1 className="text-7xl">Mealth</h1>
-              <h3>Bersama Mealth, mari berdamai dengan diri sendiri ya</h3>
+              <h3>Bersama Mealth, mari berdamai dengan diri sendiri </h3>
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfiXEey6MsFEwBe3C9Oil11UYypvKK5azhr3weZJFYZaeScrA/viewform?embedded=true" width="640" height="2280" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
             
           </div>
